@@ -50,7 +50,7 @@ html, body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: white;
+  background: #d0cccc;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -298,23 +298,11 @@ width: 27px;
     background: #919E57;
     /* border-bottom-right-radius: 117%; */
     border-radius: 50%;
-    left: -140px;
+    left: -77px;
     top: -37px;
-  z-index:999;
-  -webkit-animation: slide1 0.5s forwards;
-  -webkit-animation-delay: 2s;
-  animation: slide1 0.5s forwards;
-  animation-delay: 0s;
-}
+  z-index:999
 
-@-webkit-keyframes slide1 {
-  100% { left: -77px; }
 }
-
-@keyframes slide1 {
-  100% { left: -77px; }
-}
-
 .navsection2{
    
      position: absolute;
@@ -333,23 +321,12 @@ width: 27px;
 
 .titleheader{
       position: relative;
-      left: -247px;
+      left: 247px;
       font-size: 46px;
       color: white;
       width: 62%;
-      -webkit-animation: slide 0.5s forwards;
-      -webkit-animation-delay: 2s;
-      animation: slide 0.5s forwards;
-      animation-delay: 0s;    
 }
 
-@-webkit-keyframes slide {
-  100% { left: 247px; }
-}
-
-@keyframes slide {
-  100% { left: 247px; }
-}
 
 .Innernav_main{
     position: relative;
@@ -394,16 +371,15 @@ margin: 4px;
 
 .innertext{
       position: absolute;
-      height: 169px;
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-      /* border-radius: 8px; */
-      background: #f3f5f6;
-      display: none;
-      padding-left: 10px;
-      /* text-indent: 9px; */
-      padding-top: 5px;
-      font-size: 10px;
+    width: 93%;
+    height: 180px;
+    border-radius: 7px;
+    background: white;
+    display: none;
+    padding-left: 11px;
+    /* text-indent: 9px; */
+    padding-top: 5px;
+    font-size: 11px;
 }
 .sectionHeader{
   position: relative;
@@ -419,14 +395,14 @@ margin: 4px;
 
 .contentheader1{
   position: absolute;
-  top: 1004px;
+  top: 1116px;
   left: 249px;
   font-family:'poppinsm';
 }
 
 .contentheader2{
   position: absolute;
-  top: 1375px;
+  top: 1425px;
   left: 249px;
   font-family:'poppinsm';
 }
@@ -448,7 +424,7 @@ margin: 4px;
 
 .hrline1{
       position: absolute;
-      top: 1078px;
+      top: 1187px;
       left: 249px;
       height: 2px;
       border-bottom: 1px solid black;
@@ -456,7 +432,7 @@ margin: 4px;
 }
 .hrline2{
       position: absolute;
-      top: 1455px;
+      top: 1497px;
       left: 249px;
       height: 2px;
       border-bottom: 1px solid black;
@@ -490,11 +466,9 @@ top: 153px;
 
 .buildBg2Header{
   font-size:22px;
-  color: #0072EE;
 }
 .buildBg3Header{
   font-size:22px;
-  color: #0072EE;
 }
 
 .content_2_text{
@@ -509,7 +483,7 @@ top: 153px;
 }
 .content_3_text{
    position: relative;
-   top: 699px;
+   top: 633px;
    left: 249px;
    height: 102px;
    font-family:'poppinsm';
@@ -683,7 +657,7 @@ top: 153px;
 
 .contentheader4{
   position: absolute;
-  top: 1903px;
+  top: 1924px;
   font-family:'poppinsm';
   left:249px;
   width: 56%;
@@ -691,7 +665,7 @@ top: 153px;
 
 .hrline4{
   position: absolute;
-  top: 1986px;
+  top: 2000px;
   left: 249px;
   height: 2px;
   border-bottom: 1px solid black;
@@ -710,7 +684,7 @@ top: 153px;
 
 .content4_text1{
       position: absolute;
-      top: 1970px;
+      top: 1983px;
       font-size: 18px;
       font-family:'poppinsr';
       left: 230px;
@@ -1135,11 +1109,7 @@ top: 153px;
 }
   }
 
-  @media all and (device-width: 768px) and (device-height: 1024px) { .titleheader {
-    left: 20px !important;
-   }}
-
-@media (min-width:481px) and (max-width:1024px) {
+@media (min-width:481px) and (max-width:800px) {
   #bk6ch15ss2{
     max-width: 768px;
   }
@@ -1150,19 +1120,9 @@ top: 153px;
     display: none;
   }
   .titleheader {
-    left: 20px !important;
+    left: 38px;
     width: 100%;
-    /* background: red; */
   }
-
-  @-webkit-keyframes slide {
-    100% { left: 20px; }
-  }
-  
-  @keyframes slide {
-    100% { left: 20px; }
-  }
-
   .Innernav_main {
     left: 16px;
     top: -20px;
@@ -1171,10 +1131,6 @@ top: 153px;
   .innernav {
     width: 135px;
     height: 264px;
-  }
-
-  .innertext{
-    height: 180px;
   }
   .contentheader {
    left: 38px;
@@ -1205,17 +1161,16 @@ top: 153px;
 }
 .contentheader1 {
     left: 38px;
-    top: 990px;
+    top: 1065px;
  }
  .hrline1 {
     left: 38px;
     width: 90%;
-    top: 1065px;
+    top: 1139px;
 }
 .content_2_text {
     left: 38px;
     width: 90%;
-    top: 508px;
 }
 .contentheader2 {
     left: 38px;
@@ -1229,7 +1184,7 @@ top: 153px;
 .content_3_text {
     left: 38px;
     width: 90%;
-    top: 733px;
+    top: 634px;
 }
 .hrline3 {
     width: 690px;
@@ -1250,9 +1205,8 @@ top: 153px;
     top: 1957px;
 }
 .contentheader5 {
-  left: 38px;
-  width: 100%;
-  top: 2260px;
+    left: 38px;
+    width: 68%;
 }
 .hrline5 {
     left: 38px;
@@ -1332,38 +1286,6 @@ top: 153px;
 
 }
 
-.blue{
-  color: #0072EE;
-}
 
-.moon1{
-  position: absolute;
-  top: 125px;
-  left: 3px;
-  width: 244px;
-  border: 1px solid black;
-}
 
-.moon2{
-  position: absolute;
-  top: 125px;
-  left: 265px;
-  width: 190px;
-  border: 1px solid black;
-}
 
-.moon3{
-  position: absolute;
-  top: 125px;
-  left: 474px;
-  width: 226px;
-  border: 1px solid black;
-}
-.moonsnextTxt{
-  position: absolute;
-  top: 330px;
-}
-
-.pointers{
-  pointer-events: none;
-}

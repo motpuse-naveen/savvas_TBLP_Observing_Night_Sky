@@ -6,10 +6,9 @@ $(document).on('click keydown', '.BtnText1', function (event) {
         $(".slides").css("display","none");
         $(".BtnText1").removeClass("active")
         $(this).addClass("active")
-        $(".BtnText1").removeClass("pointers")
-        $(this).addClass("pointers")
         btnClicked = $(this).attr("slideNumber");
         $(".slides"+ btnClicked).css("display","block");
+
     }
     if(event.type === 'keydown' && event.keyCode == 37){
         $(this).parent('div').prev().find('.BtnText1').focus();
@@ -31,12 +30,12 @@ $(document).on('click keydown','div[class*="link"]',function(event){
     //event.preventDefault();
     
 if(event.type === 'click' || (event.type === 'keydown') && (event.keyCode === 13 || event.keyCode === 32)){
-        
+
         $(this).parent().find('div').removeClass('activeblack');
         $(this).addClass('activeblack');
-        $(this).parent().find('div').removeClass('pointers');
-        $(this).addClass('pointers');
+        
     }
+
     if(event.type === 'keydown' && event.keyCode == 38){
         $(this).prev().find('a').focus();
     }
@@ -54,6 +53,7 @@ if(event.type === 'click' || (event.type === 'keydown') && (event.keyCode === 13
             $(".scroller").find('[tabindex]:visible').first().focus();
         }
     }
+
 });
 
 $(document).on('click keydown', '.moonsTxt', function (event) {
