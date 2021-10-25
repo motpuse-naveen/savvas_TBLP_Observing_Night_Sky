@@ -1,0 +1,42 @@
+@media (max-width: 1030px) {
+    .left-side-bar{
+        
+    }
+    .card-wrap .card{
+        margin-right: 10px;
+    }
+    .card-body a.card-text{
+        font-size: 16px;
+    }
+    .card-body p.card-text{
+        font-size: 14px;
+    }
+}
+@media (max-width: 880px) {
+    .left-side-bar{
+        display: none;
+    }
+    .content-panel{
+        margin: auto;
+    }
+    .card-wrap .card{
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .left-side-bar{
+        display: none;
+    }
+}
+@media (max-width: 730px) {
+    .card-body a.card-text{
+        font-size: 12px;
+    }
+    .card-body p.card-text{
+        font-size: 11px;
+    }
+    .card-back{
+        font-size: 9px;
+    }
+}

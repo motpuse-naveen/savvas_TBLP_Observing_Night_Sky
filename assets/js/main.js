@@ -1,3 +1,36 @@
+$.fn.extend({
+    Disable: function () {
+        return this.each(function () {
+            $(this).attr("disabled", "disabled").attr("aria-disabled", "true").addClass("disabled")
+        });
+    },
+    Enable: function () {
+        return this.each(function () {
+            $(this).removeAttr("disabled").removeAttr("aria-disabled").removeClass("disabled")
+        });
+    },
+    ShowElement: function () {
+        return this.each(function () {
+            $(this).removeAttr("aria-hidden").removeClass("disnone");
+        });
+    },
+    HideElement: function () {
+        return this.each(function () {
+            $(this).attr("aria-hidden", "true").addClass("disnone");
+        });
+    },
+    InactiveTabs: function () {
+        return this.each(function () {
+            $(this).removeClass("active").addClass("inactive").attr("aria-hidden", "true");
+        });
+    },
+    ActiveTabs: function () {
+        return this.each(function () {
+            $(this).addClass("active").removeClass("inactive").removeAttr("aria-hidden");
+        });
+    }
+});
+
 $(document).ready(function () {
     addAccessibilityRolesAndTab();
     setTabIndex();
@@ -12,28 +45,34 @@ $(document).ready(function () {
     });
 });
 
-$(document).on('click keydown', '.link-learmore', function (event) {
+$(document).on('click', '.link-learmore', function (event) {
     if (event.type === 'click' || (event.type === 'keydown') && (event.keyCode === 13 || event.keyCode === 32)) {
         event.preventDefault();
-        $(".container-fs").hide();
-        $('.container-fs-popup').show();
-        removeTabIndex();
-        setCustomeTabIndex($('.slide1Disclaimer'));
-        lastFocusedElement = $(this);
+        $(".container-fs").HideElement();
+        $('.container-fs-popup').ShowElement();
     }
 });
 
-$(document).on('click keydown', '#closeIcon', function (event) {
+$(document).on('click', '#closeIcon', function (event) {
     if (event.type === 'click' || (event.type === 'keydown') && (event.keyCode === 13 || event.keyCode === 32)) {
         event.preventDefault();
-        $(".container-fs").show();
-        $('.container-fs-popup').hide();
+        $(".container-fs").ShowElement();
+        $('.container-fs-popup').HideElement();
         setTabIndex();
         lastFocusedElement.focus();
     }
 });
 
-
+$(document).on("click", '.link-tab', function(event){
+    //debugger;
+    if(!$(this).hasClass("active")){
+        var dataid = $(this).attr("data-tabid");
+        $(".link-tab.active").removeClass("active")
+        $(this).addClass("active")
+        $(".container-fs.slide").InactiveTabs();
+        $("#" + dataid).ActiveTabs();
+    }
+});
 
 var btnClicked;
 var lastFocusedElement;

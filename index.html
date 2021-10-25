@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/device.css">
     <script src="assets/json/main.json"></script>
     <script src="assets/jslib/jquery_3.1.1/jquery_3.1.1.min.js"></script>
     <script src="assets/jslib/jquery_ui_1.12.1/jquery_ui_1.12.1.js"></script>
@@ -33,31 +34,31 @@
             <nav class="topMenuBar2">
                 <ul class="menu d-flex">
                     <li class="flex-fill">
-                        <a href="#" class="link-tab active" slideNumber="1">Before Reading</a>
+                        <a href="#" class="link-tab active" data-tabid="slide-before-reading" slideNumber="1">Before Reading</a>
                     </li>
                     <li class="flex-fill">
-                        <a href="#" class="link-tab" slideNumber="2">Text 1</a>
+                        <a href="#" class="link-tab inactive" data-tabid="slide-text1" slideNumber="2">Text 1</a>
                     </li>
                     <li class="flex-fill">
-                        <a href="#" class="link-tab" slideNumber="3">Text 2</a>
+                        <a href="#" class="link-tab inactive" data-tabid="slide-text2" slideNumber="3">Text 2</a>
                     </li>
                     <li class="flex-fill">
-                        <a href="#" class="link-tab" slideNumber="4">Text 3</a>
+                        <a href="#" class="link-tab inactive" data-tabid="slide-text3" slideNumber="4">Text 3</a>
                     </li>
                     <li class="flex-fill">
-                        <a href="#" class="link-tab" slideNumber="5">Text 4</a>
+                        <a href="#" class="link-tab inactive" data-tabid="slide-text4" slideNumber="5">Text 4</a>
                     </li>
                     <li class="flex-fill">
-                        <a href="#" class="link-tab" slideNumber="6">Text 5</a>
+                        <a href="#" class="link-tab inactive" data-tabid="slide-text5" slideNumber="6">Text 5</a>
                     </li>
                     <li class="flex-fill">
-                        <a href="#" class="link-tab" slideNumber="7">After Reading</a>
+                        <a href="#" class="link-tab inactive" data-tabid="slide-after-reading" slideNumber="7">After Reading</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </div>
-    <div id="slide-before-reading" class="container-fs slide slide-before-reading">
+    <div id="slide-before-reading" class="container-fs slide slide-before-reading active">
         <div class="banner-bg"></div>
         <div class="container-mxw">
             <div class="left-side-bar">
@@ -362,7 +363,7 @@
                     <table class="table-style2">
                         <thead>
                             <tr>
-                                <th>Grade 1 Science Text Set</th>
+                                <th>Content Vocabulary</th>
                                 <th>In the Sky</th>
                                 <th>Star Pictures</th>
                                 <th>Observing Moon Phases</th>
@@ -372,8 +373,119 @@
                         </thead>
                         <tbody>
                             <tr>
+                                <td>astronomer</td>
+                                <td></td>
+                                <td><span class="span-disc"></span></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>constellation</td>
+                                <td></td>
+                                <td><span class="span-disc"></span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>crescent</td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="span-disc"></span></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>full moon</td>
+                                <td><span class="span-disc"></span></td>
+                                <td></td>
+                                <td><span class="span-disc"></span></td>
+                                <td><span class="span-disc"></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>gibbous</td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="span-disc"></span></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>moon</td>
+                                <td><span class="span-disc"></span></td>
+                                <td></td>
+                                <td><span class="span-disc"></span></td>
+                                <td><span class="span-disc"></span></td>
+                                <td><span class="span-disc"></span></td>
+                            </tr>
+                            <tr>
+                                <td>planet</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="span-disc"></span></td>
+                            </tr>
+                            <tr>
+                                <td>season</td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="span-disc"></span></td>
+                                <td><span class="span-disc"></span></td>
+                                <td><span class="span-disc"></span></td>
+                            </tr>
+                            <tr>
+                                <td>telescope</td>
+                                <td><span class="span-disc"></span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="span-disc"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="last-p">&nbsp;</p>
+                    <table class="table-style2">
+                        <thead>
+                            <tr>
+                                <th>Academic Vocabulary</th>
+                                <th>In the Sky</th>
+                                <th>Star Pictures</th>
+                                <th>Observing Moon Phases</th>
+                                <th>Name the Full Moons</th>
+                                <th>Through a Telescope</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>observe</td>
+                                <td><span class="span-disc"></span></td>
+                                <td></td>
+                                <td><span class="span-disc"></span></td>
+                                <td></td>
+                                <td><span class="span-disc"></span></td>
+                            </tr>
+                            <tr>
+                                <td>pattern</td>
+                                <td><span class="span-disc"></span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>phase</td>
+                                <td><span class="span-disc"></span></td>
+                                <td></td>
+                                <td><span class="span-disc"></span></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>predict</td>
+                                <td><span class="span-disc"></span></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -387,7 +499,7 @@
             </div>
         </div>
     </div>
-    <div id="slide-text1" class="container-fs slide slide-after-reading">
+    <div id="slide-text1" class="container-fs slide slide-text1 inactive">
         <div class="banner-bg-small"></div>
         <div class="container-mxw">
             <div class="left-side-bar">
@@ -433,7 +545,7 @@
             </div>
         </div>
     </div>
-    <div id="slide-text2" class="container-fs slide slide-after-reading">
+    <div id="slide-text2" class="container-fs slide slide-text2 inactive">
         <div class="banner-bg-small"></div>
         <div class="container-mxw">
             <div class="left-side-bar">
@@ -479,7 +591,7 @@
             </div>
         </div>
     </div>
-    <div id="slide-text3" class="container-fs slide slide-after-reading">
+    <div id="slide-text3" class="container-fs slide slide-text3 inactive">
         <div class="banner-bg-small"></div>
         <div class="container-mxw">
             <div class="left-side-bar">
@@ -525,7 +637,7 @@
             </div>
         </div>
     </div>
-    <div id="slide-text4" class="container-fs slide slide-after-reading">
+    <div id="slide-text4" class="container-fs slide slide-text4 inactive">
         <div class="banner-bg-small"></div>
         <div class="container-mxw">
             <div class="left-side-bar">
@@ -571,7 +683,7 @@
             </div>
         </div>
     </div>
-    <div id="slide-text5" class="container-fs slide slide-after-reading">
+    <div id="slide-text5" class="container-fs slide slide-text5 inactive">
         <div class="banner-bg-small"></div>
         <div class="container-mxw">
             <div class="left-side-bar">
@@ -617,7 +729,7 @@
             </div>
         </div>
     </div>
-    <div id="slide-after-reading" class="container-fs slide slide-after-reading">
+    <div id="slide-after-reading" class="container-fs slide slide-after-reading inactive">
         <div class="banner-bg-small"></div>
         <div class="container-mxw">
             <div class="left-side-bar">
@@ -663,7 +775,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fs-popup">
+    <div class="container-fs-popup disnone">
         <nav class="topMenuBar1">
             <ul class="menu">
                 <li><a><img class='bkimg' src='assets/images/exit-icon.png' />Exit</a></li>
