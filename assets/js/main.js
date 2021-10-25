@@ -48,3 +48,9 @@ $(document).on("click", '.link-tab', function(event){
         $("#" + dataid).ActiveTabs();
     }
 });
+
+$(document).on("click", ".side-nav-circle ul li a", function(event){
+    debugger;
+    $(".side-nav-circle ul li a").removeClass("active");
+    $(this).addClass("active");
+})

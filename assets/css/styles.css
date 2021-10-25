@@ -111,7 +111,7 @@ body, html {
     margin-bottom: 0px;
     text-align: center;
     display: inline-block;
-    font-family: 'poppinsr';
+    font-family: 'poppinsm';
     font-size: 15px;
     padding-bottom: 16px;
 }
@@ -404,7 +404,10 @@ body, html {
     font-family: 'poppinsr';
     font-size: 16px;
 }
-
+.content-panel .text-content p{
+    margin-left: 5px;
+    margin-right: 5px;
+}
 .content-panel .text-content h2 {
     font-family: 'poppinssb';
     font-size: 40px;
@@ -529,11 +532,12 @@ table.table-style2 .trbg {
 .slide.inactive{
     display: none;
 }
-.blue-script{
-
+.blue_scripting{
+    color: #0072EE;
 }
-
-
+.mb20{
+    margin-bottom: 20px;
+}
 
 /*Annimation*/
 .annim1
