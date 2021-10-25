@@ -15,9 +15,18 @@ $(document).ready(function () {
         $(".annim2").removeClass("annim2")
         $(".annim3").removeClass("annim3")
         $(".annim4").removeClass("annim4")
+        $(".annim4-1").removeClass("annim4-1")
+        $(".annim4-2").removeClass("annim4-2")
+        $(".annim4-3").removeClass("annim4-3")
         $(".annim4-4").removeClass("annim4-4")
+        $(".annim4-5").removeClass("annim4-5")
+        $(".annim4-11").removeClass("annim4-11")
+        $(".annim4-22").removeClass("annim4-22")
+        $(".annim4-33").removeClass("annim4-33")
+        $(".annim4-44").removeClass("annim4-44")
+        $(".annim4-55").removeClass("annim4-55")
 
-    },2000)
+    },10000)
 });
 
 $(document).on('click', '.link-learmore', function (event) {
