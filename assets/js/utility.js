@@ -73,7 +73,8 @@ $.fn.extend({
         if(match) {
           anchorOffset = $(match).offset().top - this.getFixedOffset();
           $('html, body').animate({ scrollTop: anchorOffset});
-  
+          $("a[refid]").removeClass("active");
+          $("a[refid='" + href.slice(1) + "']").addClass("active");
           // Add the state to history as-per normal anchor links
           if(HISTORY_SUPPORT && pushToHistory) {
             history.pushState({}, document.title, location.pathname + href);

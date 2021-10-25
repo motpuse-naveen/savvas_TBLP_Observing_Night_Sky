@@ -1,18 +1,5 @@
-@media (max-width: 1030px) {
-    .left-side-bar{
-        
-    }
-    .card-wrap .card{
-        margin-right: 10px;
-    }
-    .card-body a.card-text{
-        font-size: 16px;
-    }
-    .card-body p.card-text{
-        font-size: 14px;
-    }
-}
-@media (max-width: 880px) {
+
+@media (max-width: 990px) {
     .left-side-bar{
         display: none;
     }

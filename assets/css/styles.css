@@ -484,7 +484,6 @@ table.table-style1 .trbg {
 table.table-style2 {
     border: 1px solid #000000;
     font-family: 'poppinsr';
-    font-size: 14px;
 }
 
 table.table-style2 th {
@@ -542,17 +541,17 @@ table.table-style2 .trbg {
 /*Annimation*/
 .annim1
 {
-    animation: floatText 2s normal ease-in-out;
+    animation: floatText 1s normal ease-in-out;
 }
 .annim2
 {
-    animation: floatNav 2s normal ease-in-out;
+    animation: floatNav 1s normal ease-in-out;
 }
 .annim3{
-    animation: imageSlideTop 2s normal ease-in-out;
+    animation: imageSlideTop 1s normal ease-in-out;
 }
 .annim4{
-    animation: textSlideTop 2s normal ease-in-out;
+    animation: textSlideTop 1s normal ease-in-out;
 }
 .annim4-1{
     position: relative;
@@ -572,7 +571,7 @@ table.table-style2 .trbg {
 .annim4-4{
     position: relative;
     bottom: 0px;
-    animation: cardSlide 2s normal ease-in-out;
+    animation: cardSlide 1s normal ease-in-out;
 }
 @-webkit-keyframes floatText{
     from {
