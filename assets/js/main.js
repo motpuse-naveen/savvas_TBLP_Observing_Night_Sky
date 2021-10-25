@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    addAccessibilityRolesAndTab();
-    setTabIndex();
+    //addAccessibilityRolesAndTab();
+    //setTabIndex();
     document.addEventListener('keydown', function (e) {
         var code = e.keyCode ? e.keyCode : e.which;
         if (e.keyCode === 9) {
@@ -10,6 +10,14 @@ $(document).ready(function () {
     document.addEventListener('click', function (e) {
         $('body').removeClass('show-focus-outlines');
     });
+    setTimeout(function(){
+        $(".annim1").removeClass("annim1")
+        $(".annim2").removeClass("annim2")
+        $(".annim3").removeClass("annim3")
+        $(".annim4").removeClass("annim4")
+        $(".annim4-4").removeClass("annim4-4")
+
+    },2000)
 });
 
 $(document).on('click', '.link-learmore', function (event) {

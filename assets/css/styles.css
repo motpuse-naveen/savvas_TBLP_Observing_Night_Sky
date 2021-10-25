@@ -530,5 +530,95 @@ table.table-style2 .trbg {
     display: none;
 }
 .blue-script{
-    
+
 }
+
+
+
+/*Annimation*/
+.annim1
+{
+    animation: floatText 2s normal ease-in-out;
+}
+.annim2
+{
+    animation: floatNav 2s normal ease-in-out;
+}
+.annim3{
+    animation: imageSlideTop 2s normal ease-in-out;
+}
+.annim4{
+    animation: textSlideTop 2s normal ease-in-out;
+}
+.annim4-1{
+    position: relative;
+    bottom: 0px;
+    animation: cardSlide 0.5s normal ease-in-out;
+}
+.annim4-2{
+    position: relative;
+    bottom: 0px;
+    animation: cardSlide 1s normal ease-in-out;
+}
+.annim4-3{
+    position: relative;
+    bottom: 0px;
+    animation: cardSlide 1.5s normal ease-in-out;
+}
+.annim4-4{
+    position: relative;
+    bottom: 0px;
+    animation: cardSlide 2s normal ease-in-out;
+}
+@-webkit-keyframes floatText{
+    from {
+      margin-left: 200px;
+    }
+  
+    to {
+      /* left: auto; */
+      margin-left: 0px;
+    }
+  }
+  @-webkit-keyframes floatNav{
+    from {
+        margin-left: -200px;
+    }
+  
+    to {
+      /* left: auto; */
+      margin-left: 0px;
+    }
+  }
+  @-webkit-keyframes imageSlideTop{
+    from {
+        height: 0px;
+    }
+  
+    to {
+      /* left: auto; */
+      height: 218px;
+    }
+  }
+  @-webkit-keyframes textSlideTop{
+    from {
+        margin-top: 300px;
+    }
+  
+    to {
+      /* left: auto; */
+      margin-top: 0px;
+    }
+  }
+  @-webkit-keyframes cardSlide{
+    from {
+        margin-top: 220px;
+    }
+  
+    to {
+      /* left: auto; */
+      margin-top: 0px;
+    }
+  }
+
+/**/
