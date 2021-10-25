@@ -2,1142 +2,695 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title></title>
-   <link rel="stylesheet" href="assets/jslib/normalize_5.0.css">
-   <link rel="stylesheet" href="assets/jslib/jquery_ui_1.12.1/jquery_ui_1.12.1.min.css">
-   <link rel="stylesheet" href="assets/css/main.css">
-   <script src="assets/json/main.json"></script>
-   <script src="assets/jslib/jquery_3.1.1/jquery_3.1.1.min.js"></script>
-   <script src="assets/jslib/jquery_ui_1.12.1/jquery_ui_1.12.1.js"></script>
-   <script src="assets/jslib/jquery-ui-touch/jquery.ui.touch.js"></script>
-   <script src="assets/jslib/reSize_1.0/resize.js"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grade 1 Science | Observing the Night Sky</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!--<link rel="stylesheet" href="assets/jslib/jquery_ui_1.12.1/jquery_ui_1.12.1.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/json/main.json"></script>
+    <script src="assets/jslib/jquery_3.1.1/jquery_3.1.1.min.js"></script>
+    <script src="assets/jslib/jquery_ui_1.12.1/jquery_ui_1.12.1.js"></script>
+    <script src="assets/jslib/jquery-ui-touch/jquery.ui.touch.js"></script>
 </head>
 
 <body>
-   <div id="bk6ch15ss2" class='conatiner' data-attr='continues' tabindex="0">
-      <!-- <script type="text/javascript">
-            (function ($) {
-               game_resize_function("#bk6ch15ss2");
-            })(jQuery);
-            </script> -->
-      <div class="mainContainer">
-         <div class="topMenuBar1">
-            <img class='bkimg' src='assets/images/screenshot (2).png' />
-            <p class="exitText">Exit</p>
-            <p class="titleText">Grade 1 Science | Observing the Night Sky</p>
-         </div>
-         <div class="nameTheMoonDiv"></div>
-         <nav>
-            <div class="topMenuBar2">
-               <div class="aboutBookBtn">
-                  <div class="BtnText1 textHover1 active" slideNumber="1">Before Reading</div>
-               </div>
-               <div class="Text1Btn">
-                  <div class="BtnText1 textHover2" slideNumber="2">Text1</div>
-               </div>
-               <div class="Text2Btn">
-                  <div class="BtnText1 textHover3" slideNumber="3">Text2</div>
-               </div>
-               <div class="Text3Btn">
-                  <div class="BtnText1 textHover4" slideNumber="4">Text3</div>
-               </div>
-               <div class="Text4Btn">
-                  <div class="BtnText1 textHover5" slideNumber="5">Text4</div>
-               </div>
-               <div class="Text5Btn">
-                  <div class="BtnText1 textHover6" slideNumber="6">Text5</div>
-               </div>
-               <div class="AfterReadingBtn">
-                  <div class="BtnText1 textHover7" slideNumber="7">After Reading</div>
-               </div>
+    <div class="container-fs bb fixed-head-bar">
+        <nav class="topMenuBar1">
+            <ul class="menu">
+                <li><a><img class='bkimg' src='assets/images/exit-icon.png' />Exit</a></li>
+            </ul>
+            <div class="menutext">Grade 1 Science | Observing the Night Sky</div>
+        </nav>
+        <div class="container-mxw">
+            <nav class="topMenuBar2">
+                <ul class="menu d-flex">
+                    <li class="flex-fill">
+                        <a href="#" class="link-tab active" slideNumber="1">Before Reading</a>
+                    </li>
+                    <li class="flex-fill">
+                        <a href="#" class="link-tab" slideNumber="2">Text 1</a>
+                    </li>
+                    <li class="flex-fill">
+                        <a href="#" class="link-tab" slideNumber="3">Text 2</a>
+                    </li>
+                    <li class="flex-fill">
+                        <a href="#" class="link-tab" slideNumber="4">Text 3</a>
+                    </li>
+                    <li class="flex-fill">
+                        <a href="#" class="link-tab" slideNumber="5">Text 4</a>
+                    </li>
+                    <li class="flex-fill">
+                        <a href="#" class="link-tab" slideNumber="6">Text 5</a>
+                    </li>
+                    <li class="flex-fill">
+                        <a href="#" class="link-tab" slideNumber="7">After Reading</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="slide-before-reading" class="container-fs slide slide-before-reading">
+        <div class="banner-bg"></div>
+        <div class="container-mxw">
+            <div class="left-side-bar">
+                <div class="side-nav">
+                    <div class="side-nav-circle"></div>
+                    <ul>
+                        <li><a class="active" href="#scrollTop_s1_1">In This Text Set</a></li>
+                        <li><a href="#scrollTop_s1_2">Standards</a></li>
+                        <li><a href="#scrollTop_s1_3">Big Question</a></li>
+                        <li><a href="#scrollTop_s1_4">Hooks</a></li>
+                        <li><a href="#scrollTop_s1_5">Discuss The Big Question</a></li>
+                        <li><a href="#scrollTop_s1_6">Vocabulary</a></li>
+                    </ul>
+                </div>
+                <div class="side-disclamer">
+                    <p class="bold">Disclaimer</p>
+                    <p>By clicking the highlighted text, you will be leaving the Savvas NOW Program to enter into an external website that may contain content or... <a href="javascript:void(0);" class="link-learmore">Learn More</a></p>
+                </div>
             </div>
-         </nav>
-         <div class="contentContainer">
-            <div class="slides slides1 dblock">
-               <div class='navsection1'>
-                  <div class='link1 activeblack' data-top="scrollTop_s1_1"><a href="#scrollTop_s1_1">In This Text
-                        Set</a></div>
-                  <div class='link1 linktop1' data-top="scrollTop_s1_2"><a href="#scrollTop_s1_2">Standards</a></div>
-                  <div class='link1 linktop2' data-top="scrollTop_s1_3"><a href="#scrollTop_s1_3">Big Question</a></div>
-                  <div class='link1 linktop3' data-top="scrollTop_s1_4"><a href="#scrollTop_s1_4">Hooks</a></div>
-                  <div class='link1 linktop4' data-top="scrollTop_s1_5"><a href="#scrollTop_s1_5">Discuss The Big
-                        Question</a></div>
-                  <div class='link1 linktop5' data-top="scrollTop_s1_6"><a href="#scrollTop_s1_6">Vocabulary</a></div>
-               </div>
-               <p class="disclaimerTxt1">
-                  <b>Disclaimer</b><br>By clicking the highlighted text, you will be leaving the Savvas NOW Program
-                  to enter
-                  into an external website that may contain content or… <a href="#" class="colorBlue">Learn More</a>
-               </p>
-               <div class='scroller'>
-                  <div class='section1'>
-                     <h1 class='titleheader headingRole'>Observing the Night Sky</h1>
-                     <div class='Innernav_main'>
-                        <div class='innernav innernav1'>
-                           <span class='innernav_header'><span>Text 1</span></span>
-                           <div class='innertext'>
-                              <div><b>In the Sky</b></div>
-                              </br>
-                              <div><b>Word Count</b>: 416</div>
-                              <div><b>Lexile</b>: L460</div>
-                              <br>
-                              <div><b>Text Structure</b>:<br>Description</div>
-                              <br>
-                              <div>This <b>informational text</b> offers an overview of how the sun, moon, and stars are
-                                 seen from Earth.</div>
-                           </div>
-                           <div class='innertexttitle'>
-                              <h4><a href="#" class='navtitle navtitle1'>In the Sky</a></h4>
-                              <!-- <p class='titletext_p'>Anchor Text</p> -->
-                           </div>
-                        </div>
-                        <div class='innernav innernav2'>
-                           <span class='innernav_header'><span>Text 2</span></span>
-                           <div class='innertext'>
-                              <div><b>Star Pictures</b></div>
-                              </br>
-                              <div><b>Word Count</b>: 43</div>
-                              <div><b>Lexile</b>: 420L</div>
-                              <br>
-                              <div><b>Text Structure</b>:<br>Compare and Contrast</div>
-                              <br>
-                              <div>This <b>informational text</b> features images of constellations and the shapes they
-                                 make.</div>
-                           </div>
-                           <div class='innertexttitle'>
-                              <h4><a href="#" class='navtitle navtitle1'>Star Pictures</a></h4>
-                              <!-- <p class='titletext_p'>Anchor Text</p> -->
-                           </div>
-                        </div>
-                        <div class='innernav innernav3'>
-                           <span class='innernav_header'><span>Text 3</span></span>
-                           <div class='innertext'>
-                              <div><b>Observing Moon Phases</b></div>
-                              </br>
-                              <div><b>Length</b>: 2 minutes</div>
-                              <br>
-                              <div><b>Text Structure</b>:<br>Compare and Contrast</div>
-                              <br>
-                              <div>This <b>video</b> demonstrates how to draw the phases of the Moon.</div>
-                           </div>
-                           <div class='innertexttitle'>
-                              <h4><a href="#" class='navtitle navtitle1'>Observing Moon Phases</a></h4>
-                              <!-- <p class='titletext_p'>Anchor Text</p> -->
-                           </div>
-                        </div>
-                        <div class='innernav innernav4'>
-                           <span class='innernav_header'><span>Text 4</span></span>
-                           <div class='innertext'>
-                              <div><b>Name the Full Moons</b></div>
-                              </br>
-                              <div><b>Word Count</b>: 432</div>
-                              <div><b>Lexile</b>: 510L</div><br>
-                              <div><b>Length</b>: 2 minutes</div>
-                              <br>
-                              <div><b>Text Structure</b>:<br>Description</div>
-                              <br>
-                              <div>This <b>informational text</b> names the full moon of each month and explains the
-                                 basis of each name.</div>
-                           </div>
-                           <div class='innertexttitle'>
-                              <h4><a href="#" class='navtitle navtitle1'>Name the Full Moons</a></h4>
-                              <!-- <p class='titletext_p'>Anchor Text</p> -->
-                           </div>
-                        </div>
-                        <div class='innernav innernav5'>
-                           <span class='innernav_header'><span>Text 5</span></span>
-                           <div class='innertext'>
-                              <div><b>Through a Telescope</b></div>
-                              </br>
-                              <div><b>Word Count</b>: 99</div>
-                              <div><b>Lexile</b>: 330L</div>
-                              <br>
-                              <div><b>Text Structure</b>:<br>Compare and Contrast</div>
-                              <br>
-                              <div>This <b>informational text</b> This informational text describes how a telescope
-                                 makes distant objects in the sky easier to see.</div>
-                           </div>
-                           <div class='innertexttitle'>
-                              <h4><a href="#" class='navtitle navtitle1'>Through a Telescope</a></h4>
-                              <!-- <p class='titletext_p'>Anchor Text</p> -->
-                           </div>
-                        </div>
-                     </div>
-                     <div class="sectionHeader">
-                        <h1 class='h40 contentheader headingRole' id="scrollTop_s1_1">In This Text Set</h1>
-                        <div class='hrline'></div>
-                        <p class='contenttext'>This text set includes four informational texts and a video. All deal
-                           with an aspect of observing the night sky and the patterns that can be found around the sun,
-                           moon, and stars.</p>
-                        <p class='contenttext2'><b><i>In the Sky</i></b> is the anchor text for this set. Depending on
-                           the needs of your class, you may choose to assign <b><i>In the Sky</i></b> for independent
-                           reading, or you may choose to read it aloud with the class. Beginning with the anchor text
-                           will ground students in concepts and academic vocabulary that are key to discussing the Big
-                           Question.</p>
-                        <p class='contenttext3'>As students read the other texts in the set, they will compare their new
-                           understandings, as well as the structure and features of the text, with the anchor text.</p>
-                        <p class='contenttext4'>After students read the anchor text, you may choose to assign specific
-                           texts or encourage students to choose the texts that appeal to them the most.Use the chart below to see where specific text features, text structures, and content topics appear across the texts in this set.</p>
-                        <img class='contentimg' src='assets/images/screenshot.png' />
-                        <h1 class='h40 contentheader1 headingRole' id="scrollTop_s1_2">Standards</h1>
-                        <div class='hrline1'></div>
-                        <div class='content_2_text'>
-                           <p><b>Science Standard 1-ESS1-1.</b> Use observations of the sun, moon, and stars to describe
-                              patterns that can be predicted.
-                           </p>
-                           <p><b>INFORMATIONAL TEXT FOCUS</b><br>
-                              In this text set, students will read informational texts to understand how descriptive
-                              text structure and text features such as section heads and photographs help their
-                              understanding as they read.<br><br>
-                              <b>Content Objective</b><br> Students will understand some of the many patterns that we can
-                              observe in the sky.<br>
+            <div class="content-panel">
+                <div class="title-wrap">
+                    <h1 class="title">Observing the Night Sky</h1>
+                </div>
+                <div class="card-wrap row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-cover-img img1">
+                                <span class="imageText">Text 1</span>
+                                <div class="card-back">
+                                    <p class="bold">In the Sky</p>
+                                    <p class="normal">
+                                        <span class="bold">Word Count: </span><span>416</span><br>
+                                        <span class="bold">Lexile: </span><span>L460</span>
+                                    </p>
+                                    <p class="normal">
+                                        <span class="bold">Text Structure: </span><br>
+                                        <span>Description</span>
+                                    </p>
+                                    <p class="normal">
+                                        This <span class="bold">informational text</span> offers an overview of how the sun, moon, and stars are seen from Earth.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <a class="card-text">In the Sky</a>
+                              <p class="card-text">Anchor Text</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-cover-img img2">
+                                <span class="imageText">Text 2</span>
+                                <div class="card-back">
+                                    <p class="bold">Star Pictures</p>
+                                    <p class="normal">
+                                        <span class="bold">Word Count:</span><span>43</span><br>
+                                        <span class="bold">Lexile:</span><span>420L</span>
+                                    </p>
+                                    <p class="normal">
+                                        <span class="bold">Text Structure: </span><br>
+                                        <span>Compare and Contrast</span>
+                                    </p>
+                                    <p class="normal">
+                                        This <span class="bold">informational text</span> features images of constellations and the shapes they make.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <a class="card-text">Star Pictures</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-cover-img img3">
+                                <span class="imageText">Text 3</span>
+                                <div class="card-back">
+                                    <p class="bold">Observing Moon Phases</p>
+                                    <p class="normal">
+                                        <span class="bold">Length: </span><span>2 minutes</span><br>
+                                    </p>
+                                    <p class="normal">
+                                        <span class="bold">Text Structure: </span><br>
+                                        <span>How-to</span>
+                                    </p>
+                                    <p class="normal">
+                                        This <span class="bold">video</span> demonstrates how to draw the phases of the Moon.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <a class="card-text">Observing Moon Phases</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-cover-img img4">
+                                <span class="imageText">Text 4</span>
+                                <div class="card-back">
+                                    <p class="bold">Name the Full Moons</p>
+                                    <p class="normal">
+                                        <span class="bold">Word Count: </span><span>432</span><br>
+                                        <span class="bold">Lexile: </span><span>510L</span>
+                                    </p>
+                                    <p class="normal">
+                                        <span class="bold">Text Structure: </span><br>
+                                        <span>Description</span>
+                                    </p>
+                                    <p class="normal">
+                                        This <span class="bold">informational text</span> names the full moon of each month and explains the basis of each name.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <a class="card-text">Name the Full Moons</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-cover-img img5">
+                                <span class="imageText">Text 5</span>
+                                <div class="card-back">
+                                    <p class="bold">Through a Telescope</p>
+                                    <p class="normal">
+                                        <span class="bold">Word Count: </span><span>99</span><br>
+                                        <span class="bold">Lexile: </span><span>330L</span>
+                                    </p>
+                                    <p class="normal">
+                                        <span class="bold">Text Structure: </span><br>
+                                        <span>Compare and Contrast</span>
+                                    </p>
+                                    <p class="normal">
+                                        This <span class="bold">informational text</span> describes how a telescope makes distant objects in the sky easier to see.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <a class="card-text">Through a Telescope</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h2>In This Text Set</h2>
+                    <p>This text set includes four informational texts and a video. All deal with an aspect of observing the night sky and the patterns that can be found around the sun, moon, and stars.</p>
+                    <p><span class="bold">In the Sky</span> is the anchor text for this set. Depending on the needs of your class, you may choose to assign <span>In the Sky</span> for independent reading, or you may choose to read it aloud with the class. Beginning with the anchor text will ground students in concepts and academic vocabulary that are key to discussing the Big Question. As students read the other texts in the set, they will compare their new understandings, as well as the structure and features of the text, with the anchor text.</p>
+                    <p>After students read the anchor text, you may choose to assign specific texts or encourage students to choose the texts that appeal to them the most. Use the chart below to see where specific text features, text structures, and content topics appear across the texts in this set.</p>
+                    <table class="table-style1">
+                        <thead>
+                            <tr>
+                                <th>Grade 1 Science Text Set</th>
+                                <th>In the Sky</th>
+                                <th>Star Pictures</th>
+                                <th>Observing Moon Phases</th>
+                                <th>Name the Full Moons</th>
+                                <th>Through a Telescope</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="trbg">
+                                <td>Test Features</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Section Heads</td>
+                                <td><span class="span-disc"></span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Captions</td>
+                                <td><span class="span-disc"></span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="span-disc"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Diagrams</td>
+                                <td><span class="span-disc"></span></td>
+                                <td></td>
+                                <td><span class="span-disc"></span></td>
+                                <td></td>
+                                <td><span class="span-disc"></span></td>
+                            </tr>
+                            <tr>
+                                <td>photographs</td>
+                                <td><span class="span-disc"></span></td>
+                                <td><span class="span-disc"></span></td>
+                                <td><span class="span-disc"></span></td>
+                                <td><span class="span-disc"></span></td>
+                                <td><span class="span-disc"></span></td>
+                            </tr>
+                            <tr class="trbg">
+                                <td>Text structures</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Description</td>
+                                <td><span class="span-disc"></span></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="span-disc"></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Compare and Contrast</td>
+                                <td></td>
+                                <td><span class="span-disc"></span></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="span-disc"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Process</td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="span-disc"></span></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="trbg">
+                                <td>Content Topics</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>The Moon</td>
+                                <td><span class="span-disc"></span></td>
+                                <td></td>
+                                <td><span class="span-disc"></span></td>
+                                <td><span class="span-disc"></span></td>
+                                <td><span class="span-disc"></span></td>
+                            </tr>
+                            <tr>
+                                <td>The Stars</td>
+                                <td><span class="span-disc"></span></td>
+                                <td><span class="span-disc"></span></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="span-disc"></span></td>
+                            </tr>
+                            <tr>
+                                <td>The Sun</td>
+                                <td><span class="span-disc"></span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2>Standards</h2>
+                    <p>
+                        <span class="bold">Science Standard: 1-ESS1-1.</span> Use observations of the sun, moon, and stars to describe patterns that can be predicted.
+                        <br>
+                        <span class="bold">Information Text Focus:</span> In this text set, students will read informational texts to understand how descriptive text structure and text features such as section heads and photographs help their understanding as they read.
+                    </p>
+                    <h2>Big Question</h2>
+                    <p>What can we learn by observing the night sky?</p>
+                    <h2>Hooks</h2>
+                    <h3 class="blue-heading"><span class="playicon"><i class="fa fa-play"></i></span><a href="#">How Do We Study the Stars?</a></h3>
+                    <div class="blue-heading-pad">
+                        <p>
+                            (from 0:00 to 1:14)<br>
+                            Share this animated clip to introduce students to the wonder of gazing at the night sky.
+                        </p>
+                        <p><i><span class="bold">Ask:</span> What can you learn from looking at something in more than one way?</i></p>
+                        <h3 class="blue-heading"><a href="#">Starry Night</a></h3>
+                        <div class="image-thumb"></div>
+                        <p><i>Share this painting by Vincent Van Gogh of the dazzling night sky.</i></p>
+                        <p><i><span class="bold">Ask:</span> Does the night sky really look like this? Why do you think Van Gogh painted it this way?</i></p>
+                    </div>
+                    <h2>Discuss The Big Question</h2>
+                    <ul class="small-bullet">
+                        <li>When you look at the night sky, what do you look for first? Why?</li>
+                        <li>Have you ever seen anything surprising in the sky (<i>such as a meteor or an eclipse</i>)?</li>
+                        <li>What do you know about the moon? What about the night sky do you wish you knew more about?</li>
+                        <li>How could looking at the night sky be helpful?</li>
+                        <li>Why do you think people have always looked at the night sky?</li>
+                    </ul>
+                    <h2>Vocabulary Across Texts</h2>
+                    <p>After being introduced to key vocabulary in the anchor text, students will encounter many of the same vocabulary words and language as they read the other texts in the set, presented in new contexts, and with new opportunities to use those words in writing and conversation, helping them to expand their understanding.</p>
+                    <p><span class="bold">Oral Vocabulary</span> Repeated use of new or challenging vocabulary during classroom discussions will help familiarize students with the words and strengthen their oral vocabulary, reading comprehension, and writing.</p>
+                    <p>The chart below shows where domain-specific and academic vocabulary, in bold, appears throughout the text set.</p>
+                    <table class="table-style2">
+                        <thead>
+                            <tr>
+                                <th>Grade 1 Science Text Set</th>
+                                <th>In the Sky</th>
+                                <th>Star Pictures</th>
+                                <th>Observing Moon Phases</th>
+                                <th>Name the Full Moons</th>
+                                <th>Through a Telescope</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                              <b>Language Objective</b><br> Students will describe the features and patterns of the night
-                              sky.
-
-                           </p>
-                        </div>
-                        <h1 class='h40 contentheader2 headingRole' id="scrollTop_s1_3">BIG QUESTION</h1>
-                        <div class='hrline2'></div>
-                        <div class='content_3_text'>
-                           <p>What can we learn by observing the night sky?
-                           </p>
-                           <h1 class='h40 contentheader3 headingRole' id="scrollTop_s1_4">HOOKS</h1>
-                           <div class='hrline3'></div>
-                           <p class="playHooks"><i class="fa fa-play" style="font-size:22px;color:#0072EE"></i><a
-                                 class="buildBg2Header" href="" target="_blank"> How Do We Study the Stars? </a> <br>
-                              <span class='content3_text4'>(from 0:00 to 1:14)</span></p>
-                           <div class='content3_text5'>
-                              <p>Share this animated clip to introduce students to the wonder of gazing at the night
-                                 sky.</p>
-                              <p><b>Ask:</b> <span class="blue">What can you learn from looking at something in more than one way?</span>
-                              </p>
-                              <a class="buildBg3Header" href="" target="_blank"> Starry Night </a>
-                              <p>Share this painting by Vincent Van Gogh of the dazzling night
-                                    sky.</p>
-                              <p><b>Ask:</b> <span class="blue">Does the night sky really look like this? Why do you think Van Gogh
-                                    painted it this way?</p></span>
-                           </div>
-                        </div>
-                        <h1 class='h40 contentheader4 headingRole' id="scrollTop_s1_5">DISCUSS THE BIG QUESTION</h1>
-                        <div class='hrline4'></div>
-                        <div class='content4_text1'>
-                           <ul class='list1'>
-                              <li>When you look at the night sky, what do you look for first? Why?</li>
-                              <li>Have you ever seen anything surprising in the sky (<i>such as a meteor or an
-                                    eclipse</i>)?</li>
-                              <li>What do you know about the moon? What about the night sky do you wish you knew more
-                                 about?</li>
-                              <li>How could looking at the night sky be helpful?
-                              </li>
-                              <li>Why do you think people have always looked at the night sky?
-                              </li>
-                           </ul>
-                        </div>
-                        <h1 class='h40 contentheader5 headingRole' id="scrollTop_s1_6">VOCABULARY ACROSS TEXTS</h1>
-                        <div class='hrline5'></div>
-                        <div class='content5_text1'>
-                           <p style="width: 90%;">After being introduced to key vocabulary in the anchor text, students
-                              will encounter many of the same vocabulary words and language as they read the other texts
-                              in the set, presented in new contexts, and with new opportunities to use those words in
-                              writing and conversation, helping them to expand their understanding.</p>
-                              <p style="width: 90%;">The chart below shows where domain-specific and academic vocabulary, in bold, appears throughout the text set.</p>
-                           <img src='assets/images/screenshot1.png' style="width: 90%;" />
-                           <br>
-                           <br>
-                           <br>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+                    <p class="last-p">&nbsp;</p>
+                </div>
             </div>
-            <div class="slides slides5 ">
-               <div class='navsection2'>
-                  <div class='link2 activeblack' data-top="scrollTop_s5_1"><a href="#scrollTop_s5_1">Instructional
-                        Focus</a></div>
-                  <div class='link2 linktop2_1' data-top="scrollTop_s5_2"><a href="#scrollTop_s5_2">Summary</a></div>
-                  <div class='link2 linktop2_2' data-top="scrollTop_s5_3"><a href="#scrollTop_s5_3">Before Reading</a>
-                  </div>
-                  <div class='link2 linktop2_3' data-top="scrollTop_s5_4"><a href="#scrollTop_s5_4">During Reading</a>
-                  </div>
-                  <div class='link2 linktop2_4' data-top="scrollTop_s5_5"><a href="#scrollTop_s5_5">After Reading</a>
-                  </div>
-                  <!-- <div class='link1 linktop5'>Vocabulary</div> -->
-               </div>
-               <div class='scroller'>
-                  <div class="tittleDiv">
-                     <div class="tittleContainer">
-                        <span class="tittle1 headingRole">Name the Full Moons</span>
-                        <span class="tittle2">by Thomas Taylor</span>
-                        <span class="tittle3">Informational Text - Word Count: 432 Lexile: 510L</span>
-                     </div>
-                  </div>
-                  <div class="nameofMoonsDiv">
-                     <div class="moonsTxt">Name the Full Moons</div>
-                     <div class="moonsTxt2">Student Text Preview</div>
-                  </div>
-                  <div class="textContainer">
-                     <span class="headers header1 headingRole" id="scrollTop_s5_1">Instructional Focus</span>
-                     <div class="hrLine line1"></div>
-                     <p class="contents con1">
-                        <b>Science Standard: 1-ESS1-1.</b> Use observations of the sun, moon, and stars to describe
-                        patterns that
-                        can be predicted.
-                     </p>
-                     <p class="contents con2">
-                        <b>Content Objective:</b> Students will learn the name of the full moon for each month of the
-                        year.<br>
-                        <b>Language Objective:</b> Students will describe the connection between the moon names and the
-                        time of year.
-                     </p>
-                     <p class="contents con3">
-                        <b>Text Structure Objective:</b> Students will understand how a descriptive text structure
-                        describes things and ideas.<br>
-                        <b>Text Feature Objective:</b> Students will understand how photographs help them understand
-                        what a
-                        writer is describing.
-                     </p>
-                     <div class="paragraph">
-                        <span class="paraHeader headingRole" id="scrollTop_s5_2">SUMMARY</span>
-                        <div class="paraLine"></div>
-                        <div class="paraContent">
-                           <p>
-                              Did you ever wonder how the Harvest Moon got its name? This text shares the Native
-                              American
-                              origins for the name of the full moon of each month.
-                           </p>
-                        </div>
-                     </div>
-                     <div class="paragraph ph1">
-                        <span class="paraHeader headingRole" id="scrollTop_s5_3">BEFORE READING</span>
-                        <div class="paraLine"></div>
-                        <div class="paraContent">
-                           <p>
-                              <b>BIG QUESTION</b><br><span class="">Remind students of the Big Question: Why do people
-                                 observe the night sky?</span><br> Ask: <span class="blue">How do you think <i>Name the
-                                    Full Moons</i> will help you think about the Big Question?</span>
-                           </p>
-
-                           <p>
-                              <b>PREVIEW VOCABULARY</b><br> Have students find and read sentences in the text that have
-                              the
-                              words <b><i>full
-                                    moon</i></b>, <b><i>moon</i></b>, and <b><i>season</i></b>. Discuss the meaning of
-                              each word with the
-                              class.<br> Ask:<span class="blue"> How often do
-                                 you see a <b>full moon</b> in the sky? What does it look like to you? Does the
-                                 <b>moon</b> have a
-                                 different
-                                 feeling to it in different <b>seasons</b>?</span>
-                           </p>
-
-
-                           <p>
-                              <b>ORAL VOCABULARY</b><br> Much of the vocabulary in <i>Name the Full Moons</i> might be
-                              familiar to most students, but other texts in this set include words that might be new or
-                              challenging. During class discussions, use these new terms repeatedly to help students
-                              become familiar with them.<br> For example: <span class="blue">When we <b>observe</b>
-                                 something, we look at it carefully. What do you notice when you observe a full
-                                 moon?</span>
-                           </p>
-
-
-
-                           <p>
-                              <b>WORD WEB</b><br> Share a Word Web graphic organizer. To help students think about the
-                              relationships
-                              between words, guide them in creating a word web using the word <i>moon</i>. When they
-                              read <i>Name the
-                                 Full Moons</i>, encourage them to add words to their web that relate to the word
-                              <i>moon</i>. A web for<i>
-                                 moon</i> might look like this:
-                           </p>
-                        </div>
-                     </div>
-                     <img src="assets/images/1.png" class="moonsImg" />
-                     <div class="paragraph ph2">
-                        <span class="paraHeader headingRole" id="scrollTop_s5_4">During Reading</span>
-                        <div class="paraLine"></div>
-                        <div class="paraContent">
-                           <p>
-                              <b>ELEMENTS OF INFORMATIONAL TEXT</b><br> <b>Text Structure</b> Explain to students that
-                              <i>Name
-                                 the Full Moons</i> is
-                              written with a descriptive text structure. Say: <span class="blue">When writers want to
-                                 explain something, they describe what it is or how it works. Project the text or direct
-                                 students to p. 7 of Name the Full Moons on their devices.</span> Say: <span class="blue">As
-                                    writers describe something they give details about that thing. The more details the
-                                    writer gives, the better you understand. Have volunteers share details from the
-                                    text that describe how the full moon in April got its name.</span>
-         
-
-                                    Display a T-chart graphic organizer. In the left column, write “Descriptive
-                                    Structure.” Work with the class to fill in the right column with what they know
-                                    about descriptive structure, and how it helps them understand the writer’s ideas.
-                                    For example: “gives details,” “explains something”
-
-                                    Text Features Say: <span class="blue">Using pictures can help explain an idea. Point to
-                                       the photograph on p. 6.</span><br>
-                                        Ask: <span class="blue">What does this picture show? How
-                                          does this picture help you understand why the full moon in March is called the
-                                          Worm Moon? (Possible response: It shows worms.)</span>
-
-                                          Return to the T-chart. In the left column write “Pictures.” Work with the
-                                          class to fill in the right column with examples of how pictures help readers
-                                          understand the text. For example: “show what the words tell about.”
-                           </p>
-                           <!-- <p>
-                              <b>Text Features</b> Say: Using pictures can help explain an idea. Point to the photograph
-                              on
-                              p. x.
-                              Ask: What does this picture show? How does this picture help you understand why the full
-                              moon
-                              in March is called the Worm Moon? (Possible response: It shows worms.)
-                           </p>
-                           <p>
-                              <b>Track the Texts:</b> Have students use the <b><a href="#">Observing the Night Sky:
-                                    Track the Texts</a></b>
-                              graphic
-                              organizer. As they read, have them fill in the <b><i>Name the Full Moons</i></b> column
-                              with the
-                              name of
-                              the text structure, and any text features they noticed, including photographs.
-                           </p> -->
-                        </div>
-                     </div>
-                     <div class="paragraph ph3">
-                        <span class="paraHeader headingRole" id="scrollTop_s5_5">After Reading</span>
-                        <div class="paraLine"></div>
-                        <div class="paraContent">
-                           <p>
-                              <b>VOCABULARY</b><br />
-                              After students have read <b>Name the Full Moons</b>, have them review their completed word
-                              webs Ask: <span class="blue">Are there any more words that you would like to
-                                 add?</span><br />
-                              Display these images from <b>Name the Full Moons</b> to help students as they think about
-                              words related to <i>moon</i>.<br /><br />
-
-                              <p>
-                                 <img src="assets/images/Screen Shot 2021-10-11 at 12.26.20 PM.png" class="moon1"/>
-                                 <img src="assets/images/Screen Shot 2021-10-11 at 12.26.56 PM.png" class="moon2"/>
-                                 <img src="assets/images/Screen Shot 2021-10-11 at 12.27.40 PM.png" class="moon3"/>
-                              </p>
-                              <div class="moonsnextTxt"> 
-                              <b>DISCUSS ACROSS TEXTS</b><br />
-                              Encourage students to make connections between <i>Name the Full Moons</i> and other texts
-                              they have read on related subjects.
-                           <ul>
-                              <li>In <i>Name the Full Moons</i>, we learned that the moon can have many names. What
-                                 other facts have you read about the moon?</li>
-                              <li><i>Name the Full Moons</i> describes how the time of year affects how people think
-                                 about the moon. What else have you read about how the moon changes over time?</li>
-                              <li>Think back to what you read about the moon in<i> In the Sky</i>. What more did you
-                                 learn about the moon from reading <i>Name the Full Moons</i>?</li>
-                           </ul>
-
-                           <b>Track the Texts:</b> After the discussion, Work with the class to fill in the <i><b>Name the Full Moons</b></i> row with things they learned about the moon<br /><br />
-
-                           <b>DISCUSS THE BIG QUESTION</b><br> Lead a class discussion around this text’s Big Question:
-                           <i>Why do people observe the night sky?</i> As students share their ideas, draw out more
-                           information from them with follow-up questions such as, “Can you say more about that?” or
-                           “What are some examples of that?”
-                           <ul>
-                              <li>How do you think the naming of the full moons can be useful?</li>
-                              <li> How does
-                                 knowing the names of the full moons help you think about the different parts of the
-                                 year? Why
-                                 is that important?</li>
-                           </ul>
-                           </p>
-
-                           <p class="he1">
-                              <b>WRITE ABOUT THE BIG QUESTION</b><br>
-                              Have students make up their own names for full moons based on
-                              the time of year they appear. For example, they might name the full moon in July the
-                              Fireworks Moon. Have them draw a picture of their moon, with details showing how it got
-                              its
-                              name.
-                              <br>
-                              <br>
-                              <br>
-                           </p>
-                        </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+        </div>
+    </div>
+    <div id="slide-text1" class="container-fs slide slide-after-reading">
+        <div class="banner-bg-small"></div>
+        <div class="container-mxw">
+            <div class="left-side-bar">
+                <div class="side-nav">
+                    <div class="side-nav-circle"></div>
+                    <ul>
+                        <li><a class="active" href="#scrollTop_s1_1">Wrap It Up</a></li>
+                        <li><a href="#scrollTop_s1_2">Vocabulary Round-Up</a></li>
+                        <li><a href="#scrollTop_s1_3">Discuss The Text Set's Big Question</a></li>
+                        <li><a href="#scrollTop_s1_4">Culminating Projects</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="slides slides2 ">
-               <div class='navsection2'>
-                  <div class='link2 activeblack' data-top="scrollTop_s2_1"><a href="#scrollTop_s2_1">Instructional
-                        Focus</a></div>
-                  <div class='link2 linktop2_1' data-top="scrollTop_s2_2"><a href="#scrollTop_s2_2">Summary</a></div>
-                  <div class='link2 linktop2_2' data-top="scrollTop_s2_3"><a href="#scrollTop_s2_3">Before Reading</a>
-                  </div>
-                  <div class='link2 linktop2_3' data-top="scrollTop_s2_4"><a href="#scrollTop_s2_4">During Reading</a>
-                  </div>
-                  <div class='link2 linktop2_4' data-top="scrollTop_s2_5"><a href="#scrollTop_s2_5">After Reading</a>
-                  </div>
-                  <!-- <div class='link1 linktop5'>Vocabulary</div> -->
-               </div>
-               <div class='scroller'>
-                  <div class="tittleDiv">
-                     <div class="tittleContainer">
-                        <span class="tittle1 headingRole">Name the Full Moons</span>
-                        <span class="tittle2">by Thomas Taylor</span>
-                        <span class="tittle3">Informational Text - Word Count: 432 Lexile: 510L</span>
-                     </div>
-                  </div>
-                  <div class="nameofMoonsDiv">
-                     <span class="moonsTxt">Name the Full Moons</span>
-                     <span class="moonsTxt2">Student Text Preview</span>
-                  </div>
-                  <div class="textContainer">
-                     <span class="headers header1 headingRole" id="scrollTop_s2_1">Instructional Focus</span>
-                     <div class="hrLine line1"></div>
-                     <p class="contents con1">
-                        <b>Science Standard: 1-ESS1-1.</b> Use observations of the sun, moon, and stars to describe
-                        patterns that
-                        can be predicted.
-                     </p>
-                     <p class="contents con2">
-                        <b>Content Objective:</b> Students will learn the name of the full moon for each month of the
-                        year.<br>
-                        <b>Language Objective:</b> Students will describe the connection between the moon names and the
-                        time of year.
-                     </p>
-                     <p class="contents con3">
-                        <b>Text Structure Objective:</b> Students will understand how a descriptive text structure
-                        describes things and ideas.<br>
-                        <b>Text Feature Objective:</b> Students will understand how photographs help them understand
-                        what a
-                        writer is describing.
-                     </p>
-                     <div class="paragraph">
-                        <span class="paraHeader headingRole" id="scrollTop_s2_2">SUMMARY</span>
-                        <div class="paraLine"></div>
-                        <div class="paraContent">
-                           <p>
-                              Did you ever wonder how the Harvest Moon got its name? This text shares the Native
-                              American
-                              origins for the name of the full moon of each month.
-                           </p>
-                        </div>
-                     </div>
-                     <div class="paragraph ph1">
-                        <span class="paraHeader headingRoleer" id=scrollTop_s2_3>BEFORE READING</span>
-                        <div class="paraLine"></div>
-                        <div class="paraContent">
-                           <p>
-                              <b>BIG QUESTION</b><br><span class="">Remind students of the Big Question: Why do people
-                                 observe the night sky?</span><br> Ask: <span class="blue">How do you think <i>Name the
-                                    Full Moons</i> will help you think about the Big Question?</span>
-                           </p>
-
-                           <p>
-                              <b>PREVIEW VOCABULARY</b><br> Have students find and read sentences in the text that have
-                              the
-                              words <b><i>full
-                                    moon</i></b>, <b><i>moon</i></b>, and <b><i>season</i></b>. Discuss the meaning of
-                              each word with the
-                              class.<br> Ask: <span class="blue">How often do
-                                 you see a <b>full moon</b> in the sky? What does it look like to you? Does the
-                                 <b>moon</b> have a
-                                 different
-                                 feeling to it in different <b>seasons</b>?</span>
-                           </p>
-
-                           <p>
-                              <b>ORAL VOCABULARY</b><br> Much of the vocabulary in <i>Name the Full Moons</i> might be
-                              familiar to most students, but other texts in this set include words that might be new or
-                              challenging. During class discussions, use these new terms repeatedly to help students
-                              become familiar with them.<br> For example: <span class="blue">When we <b>observe</b>
-                                 something, we look at it carefully. What do you notice when you observe a full
-                                 moon?</span>
-                           </p>
-
-                           <p>
-                              <b>WORD WEB</b><br> Share a Word Web graphic organizer. To help students think about the
-                              relationships
-                              between words, guide them in creating a word web using the word <i>moon</i>. When they
-                              read <i>Name the
-                                 Full Moons</i>, encourage them to add words to their web that relate to the word
-                              <i>moon</i>. A web for<i>
-                                 moon</i> might look like this:
-                           </p>
-                        </div>
-                     </div>
-                     <img src="assets/images/1.png" class="moonsImg" />
-                     <div class="paragraph ph2">
-                        <span class="paraHeader headingRole" id="scrollTop_s2_4">During Reading</span>
-                        <div class="paraLine"></div>
-                        <div class="paraContent">
-                           <p>
-                              <b>ELEMENTS OF INFORMATIONAL TEXT</b><br> <b>Text Structure</b> Explain to students that
-                              <i>Name
-                                 the Full Moons</i> is
-                              written with a descriptive text structure. Say: <span class="blue">When writers want to
-                                 explain something, they describe what it is or how it works. Project the text or direct
-                                 students to p. 7 of Name the Full Moons on their devices.</span> Say: <span class="blue">As
-                                    writers describe something they give details about that thing. The more details the
-                                    writer gives, the better you understand. Have volunteers share details from the
-                                    text that describe how the full moon in April got its name.</span>
-         
-
-                                    Display a T-chart graphic organizer. In the left column, write “Descriptive
-                                    Structure.” Work with the class to fill in the right column with what they know
-                                    about descriptive structure, and how it helps them understand the writer’s ideas.
-                                    For example: “gives details,” “explains something”
-
-                                    Text Features Say: <span class="blue">Using pictures can help explain an idea. Point to
-                                       the photograph on p. 6.</span><br>
-                                        Ask: <span class="blue">What does this picture show? How
-                                          does this picture help you understand why the full moon in March is called the
-                                          Worm Moon? (Possible response: It shows worms.)</span>
-
-                                          Return to the T-chart. In the left column write “Pictures.” Work with the
-                                          class to fill in the right column with examples of how pictures help readers
-                                          understand the text. For example: “show what the words tell about.”
-                           </p>
-                           <!-- <p>
-                              <b>Text Features</b> Say: Using pictures can help explain an idea. Point to the photograph
-                              on
-                              p. x.
-                              Ask: What does this picture show? How does this picture help you understand why the full
-                              moon
-                              in March is called the Worm Moon? (Possible response: It shows worms.)
-                           </p>
-                           <p>
-                              <b>Track the Texts:</b> Have students use the <b><a href="#">Observing the Night Sky:
-                                    Track the Texts</a></b>
-                              graphic
-                              organizer. As they read, have them fill in the <b><i>Name the Full Moons</i></b> column
-                              with the
-                              name of
-                              the text structure, and any text features they noticed, including photographs.
-                           </p> -->
-                        </div>
-                     </div>
-                     <div class="paragraph ph3">
-                        <span class="paraHeader headingRole" id="scrollTop_s2_5">After Reading</span>
-                        <div class="paraLine"></div>
-                        <div class="paraContent">
-                           <p>
-                              <b>VOCABULARY</b><br />
-                              After students have read <b>Name the Full Moons</b>, have them review their completed word
-                              webs Ask: <span class="blue">Are there any more words that you would like to
-                                 add?</span><br />
-                              Display these images from <b>Name the Full Moons</b> to help students as they think about
-                              words related to <i>moon</i>.<br /><br />
-                              <p>
-                                 <img src="assets/images/Screen Shot 2021-10-11 at 12.26.20 PM.png" class="moon1"/>
-                                 <img src="assets/images/Screen Shot 2021-10-11 at 12.26.56 PM.png" class="moon2"/>
-                                 <img src="assets/images/Screen Shot 2021-10-11 at 12.27.40 PM.png" class="moon3"/>
-                              </p>
-                              <div class="moonsnextTxt"> 
-                              <b>DISCUSS ACROSS TEXTS</b><br />
-                              Encourage students to make connections between <i>Name the Full Moons</i> and other texts
-                              they have read on related subjects.
-                           <ul>
-                              <li>In <i>Name the Full Moons</i>, we learned that the moon can have many names. What
-                                 other facts have you read about the moon?</li>
-                              <li><i>Name the Full Moons</i> describes how the time of year affects how people think
-                                 about the moon. What else have you read about how the moon changes over time?</li>
-                              <li>Think back to what you read about the moon in<i> In the Sky</i>. What more did you
-                                 learn about the moon from reading <i>Name the Full Moons</i>?</li>
-                           </ul>
-
-                           <b>Track the Texts:</b> After the discussion, Work with the class to fill in the <i><b>Name the Full Moons</b></i> row with things they learned about the moon<br /><br />
-
-                           <b>DISCUSS THE BIG QUESTION</b><br> Lead a class discussion around this text’s Big Question:
-                           <i>Why do people observe the night sky?</i> As students share their ideas, draw out more
-                           information from them with follow-up questions such as, “Can you say more about that?” or
-                           “What are some examples of that?”
-                           <ul>
-                              <li>How do you think the naming of the full moons can be useful?</li>
-                              <li> How does
-                                 knowing the names of the full moons help you think about the different parts of the
-                                 year? Why
-                                 is that important?</li>
-                           </ul>
-                           </p>
-
-                           <p class="he1">
-                              <b>WRITE ABOUT THE BIG QUESTION</b><br>
-                              Have students make up their own names for full moons based on
-                              the time of year they appear. For example, they might name the full moon in July the
-                              Fireworks Moon. Have them draw a picture of their moon, with details showing how it got
-                              its
-                              name.
-                              <br>
-                              <br>
-                              <br>
-                           </p>
-                        </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+            <div class="content-panel">
+                <div class="title-wrap">
+                    <h1 class="title">Observing the Night Sky</h1>
+                </div>
+                <div class="text-content">
+                    <h2>Wrap It Up</h2>
+                    <p>Now that the class has read some or all of the texts in this set, it is time to pull together all the information they have learned from their reading in order to explore and share their evolving understanding of the Big Question.</p>
+                    
+                    <h2>Vocabulary Round-Up</h2>
+                    <p><span class="bold">Word Sort</span> Have students review the word webs they have created for the texts they have read, and then do a word sort, identifying new connections between the words using all the information they now have from their reading. For example, students might connect the words crescent, full moon, gibbous, phase, and moon, as they're all related to phases of the moon.</p>
+                    <p>Ask students to share their word sorts and explain why they connected the words the way they did. Students may sort words based on their own experiences, so accept all reasonable explanations for the connections they make.</p>
+                    <h2>Discuss The Text Set's Big Question</h2>
+                    <p>Guide a class discussion around the Big Question: <i>What can we learn by observing the night sky?</i> Encourage students to bring in knowledge they have learned from all the texts they have read in the text set, using as many of the words from their word webs as they can. </p>
+                    <ul class="small-bullet">
+                        <li>What did you already know about things in the sky before you began reading this text set?</li>
+                        <li>Now that you’ve read a lot of books about the sky, what new things did you learn?</li>
+                        <li>What about the night sky would you like to learn more about?</li>
+                        <li>Which texts were most useful in helping you answer the Big Question?</li>
+                    </ul>
+                    <button class="blue-button">Activity Support</button>
+                    <h2>Culminating Projects</h2>
+                    <p>Have students apply what they’ve learned from the text set to demonstrate and enhance their understanding. Review the <a href="#">Project Rubric</a> with students, explaining in detail the expectations for the project.</p>
+                    <p><span class="bold">Sky Tour!</span></p>
+                    <p>Have students draw a picture of the night sky. Ask them to make sure they include at least three objects they read about in this text set.</p>
+                    <p>Have them plan and practice how they would give a tour of the night sky. What would they say about each thing in the sky? What interesting information from their reading would they share?</p>
+                    <p>Students can refer to what they wrote in Write About the Big Question for each text to aid their thinking and planning. They may also use the <a href="#">Project Template</a> to help them organize and clarify their thinking as they plan their projects. Encourage them to use the vocabulary they’ve learned from the texts in their tours.</p>
+                    <p>When they are finished planning their tours, provide students with a variety of settings in which they can share their tours, such as in a small group setting, for the whole class, or with a single partner.</p>
+                    <p class="last-p">&nbsp;</p>
+                </div>
             </div>
-            <div class="slides slides3 ">
-               <div class='navsection2'>
-                  <div class='link2 activeblack' data-top="scrollTop_s3_1"><a href="#scrollTop_s3_1">Instructional
-                        Focus</a></div>
-                  <div class='link2 linktop2_1' data-top="scrollTop_s3_2"><a href="#scrollTop_s3_2">Summary</a></div>
-                  <div class='link2 linktop2_2' data-top="scrollTop_s3_3"><a href="#scrollTop_s3_3">Before Reading</a>
-                  </div>
-                  <div class='link2 linktop2_3' data-top="scrollTop_s3_4"><a href="#scrollTop_s3_4">During Reading</a>
-                  </div>
-                  <div class='link2 linktop2_4' data-top="scrollTop_s3_5"><a href="#scrollTop_s3_5">After Reading</a>
-                  </div>
-                  <!-- <div class='link1 linktop5'>Vocabulary</div> -->
-               </div>
-               <div class='scroller'>
-                  <div class="tittleDiv">
-                     <div class="tittleContainer">
-                        <span class="tittle1 headingRole">Name the Full Moons</span>
-                        <span class="tittle2">by Thomas Taylor</span>
-                        <span class="tittle3">Informational Text - Word Count: 432 Lexile: 510L</span>
-                     </div>
-                  </div>
-                  <div class="nameofMoonsDiv">
-                     <span class="moonsTxt">Name the Full Moons</span>
-                     <span class="moonsTxt2">Student Text Preview</span>
-                  </div>
-                  <div class="textContainer">
-                     <span class="headers header1 headingRole" id="scrollTop_s3_1">Instructional Focus</span>
-                     <div class="hrLine line1"></div>
-                     <p class="contents con1">
-                        <b>Science Standard: 1-ESS1-1.</b> Use observations of the sun, moon, and stars to describe
-                        patterns that
-                        can be predicted.
-                     </p>
-                     <p class="contents con2">
-                        <b>Content Objective:</b> Students will learn the name of the full moon for each month of the
-                        year.<br>
-                        <b>Language Objective:</b> Students will describe the connection between the moon names and the
-                        time of year.
-                     </p>
-                     <p class="contents con3">
-                        <b>Text Structure Objective:</b> Students will understand how a descriptive text structure
-                        describes things and ideas.<br>
-                        <b>Text Feature Objective:</b> Students will understand how photographs help them understand
-                        what a
-                        writer is describing.
-                     </p>
-                     <div class="paragraph">
-                        <span class="paraHeader headingRole" id="scrollTop_s3_2">SUMMARY</span>
-                        <div class="paraLine"></div>
-                        <div class="paraContent">
-                           <p>
-                              Did you ever wonder how the Harvest Moon got its name? This text shares the Native
-                              American
-                              origins for the name of the full moon of each month.
-                           </p>
-                        </div>
-                     </div>
-                     <div class="paragraph ph1">
-                        <span class="paraHeader headingRole" id="scrollTop_s3_3">BEFORE READING</span>
-                        <div class="paraLine"></div>
-                        <div class="paraContent">
-                           <p>
-                              <b>BIG QUESTION</b><br><span class="">Remind students of the Big Question: Why do people
-                                 observe the night sky?</span><br> Ask: <span class="blue">How do you think <i>Name the
-                                    Full Moons</i> will help you think about the Big Question?</span>
-                           </p>
-
-                           <p>
-                              <b>PREVIEW VOCABULARY</b><br> Have students find and read sentences in the text that have
-                              the
-                              words <b><i>full
-                                    moon</i></b>, <b><i>moon</i></b>, and <b><i>season</i></b>. Discuss the meaning of
-                              each word with the
-                              class.<br> Ask: <span class="blue">How often do
-                                 you see a <b>full moon</b> in the sky? What does it look like to you? Does the
-                                 <b>moon</b> have a
-                                 different
-                                 feeling to it in different <b>seasons</b>?</span>
-                           </p>
-
-                           <p>
-                              <b>ORAL VOCABULARY</b><br> Much of the vocabulary in <i>Name the Full Moons</i> might be
-                              familiar to most students, but other texts in this set include words that might be new or
-                              challenging. During class discussions, use these new terms repeatedly to help students
-                              become familiar with them.<br> For example: <span class="blue">When we <b>observe</b>
-                                 something, we look at it carefully. What do you notice when you observe a full
-                                 moon?</span>
-                           </p>
-
-                           <p>
-                              <b>WORD WEB</b><br> Share a Word Web graphic organizer. To help students think about the
-                              relationships
-                              between words, guide them in creating a word web using the word <i>moon</i>. When they
-                              read <i>Name the
-                                 Full Moons</i>, encourage them to add words to their web that relate to the word
-                              <i>moon</i>. A web for<i>
-                                 moon</i> might look like this:
-                           </p>
-                        </div>
-                     </div>
-                     <img src="assets/images/1.png" class="moonsImg" />
-                     <div class="paragraph ph2">
-                        <span class="paraHeader headingRole" id="scrollTop_s3_4">During Reading</span>
-                        <div class="paraLine"></div>
-                        <div class="paraContent">
-                           <p>
-                              <p>
-                                 <b>ELEMENTS OF INFORMATIONAL TEXT</b><br> <b>Text Structure</b> Explain to students that
-                                 <i>Name
-                                    the Full Moons</i> is
-                                 written with a descriptive text structure. Say: <span class="blue">When writers want to
-                                    explain something, they describe what it is or how it works. Project the text or direct
-                                    students to p. 7 of Name the Full Moons on their devices.</span> Say: <span class="blue">As
-                                       writers describe something they give details about that thing. The more details the
-                                       writer gives, the better you understand. Have volunteers share details from the
-                                       text that describe how the full moon in April got its name.</span>
-            
-   
-                                       Display a T-chart graphic organizer. In the left column, write “Descriptive
-                                       Structure.” Work with the class to fill in the right column with what they know
-                                       about descriptive structure, and how it helps them understand the writer’s ideas.
-                                       For example: “gives details,” “explains something”
-   
-                                       Text Features Say: <span class="blue">Using pictures can help explain an idea. Point to
-                                          the photograph on p. 6.</span><br>
-                                           Ask: <span class="blue">What does this picture show? How
-                                             does this picture help you understand why the full moon in March is called the
-                                             Worm Moon? (Possible response: It shows worms.)</span>
-   
-                                             Return to the T-chart. In the left column write “Pictures.” Work with the
-                                             class to fill in the right column with examples of how pictures help readers
-                                             understand the text. For example: “show what the words tell about.”
-                              </p>
-                           <!-- <p>
-                              <b>Text Features</b> Say: Using pictures can help explain an idea. Point to the photograph
-                              on
-                              p. x.
-                              Ask: What does this picture show? How does this picture help you understand why the full
-                              moon
-                              in March is called the Worm Moon? (Possible response: It shows worms.)
-                           </p>
-                           <p>
-                              <b>Track the Texts:</b> Have students use the <b><a href="#">Observing the Night Sky:
-                                    Track the Texts</a></b>
-                              graphic
-                              organizer. As they read, have them fill in the <b><i>Name the Full Moons</i></b> column
-                              with the
-                              name of
-                              the text structure, and any text features they noticed, including photographs.
-                           </p> -->
-                        </div>
-                     </div>
-                     <div class="paragraph ph3">
-                        <span class="paraHeader headingRole" id="scrollTop_s3_5">After Reading</span>
-                        <div class="paraLine"></div>
-                        <div class="paraContent">
-                           <p>
-                              <b>VOCABULARY</b><br />
-                              After students have read <b>Name the Full Moons</b>, have them review their completed word
-                              webs Ask: <span class="blue">Are there any more words that you would like to
-                                 add?</span><br />
-                              Display these images from <b>Name the Full Moons</b> to help students as they think about
-                              words related to <i>moon</i>.<br /><br />
-                                
-                                 <p>
-                                    <img src="assets/images/Screen Shot 2021-10-11 at 12.26.20 PM.png" class="moon1"/>
-                                    <img src="assets/images/Screen Shot 2021-10-11 at 12.26.56 PM.png" class="moon2"/>
-                                    <img src="assets/images/Screen Shot 2021-10-11 at 12.27.40 PM.png" class="moon3"/>
-                                 </p>
-                              <div class="moonsnextTxt"> 
-                              <b>DISCUSS ACROSS TEXTS</b><br />
-                              Encourage students to make connections between <i>Name the Full Moons</i> and other texts
-                              they have read on related subjects.
-                           <ul>
-                              <li>In <i>Name the Full Moons</i>, we learned that the moon can have many names. What
-                                 other facts have you read about the moon?</li>
-                              <li><i>Name the Full Moons</i> describes how the time of year affects how people think
-                                 about the moon. What else have you read about how the moon changes over time?</li>
-                              <li>Think back to what you read about the moon in<i> In the Sky</i>. What more did you
-                                 learn about the moon from reading <i>Name the Full Moons</i>?</li>
-                           </ul>
-
-                           <b>Track the Texts:</b> After the discussion, Work with the class to fill in the <i><b>Name the Full Moons</b></i> row with things they learned about the moon<br /><br />
-
-                           <b>DISCUSS THE BIG QUESTION</b><br> Lead a class discussion around this text’s Big Question:
-                           <i>Why do people observe the night sky?</i> As students share their ideas, draw out more
-                           information from them with follow-up questions such as, “Can you say more about that?” or
-                           “What are some examples of that?”
-                           <ul>
-                              <li>How do you think the naming of the full moons can be useful?</li>
-                              <li> How does
-                                 knowing the names of the full moons help you think about the different parts of the
-                                 year? Why
-                                 is that important?</li>
-                           </ul>
-                        
-                           </p>
-
-                           <p class="he1">
-                              <b>WRITE ABOUT THE BIG QUESTION</b><br>
-                              Have students make up their own names for full moons based on
-                              the time of year they appear. For example, they might name the full moon in July the
-                              Fireworks Moon. Have them draw a picture of their moon, with details showing how it got
-                              its
-                              name.
-                              <br>
-                              <br>
-                              <br>
-                           </p>
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                     </div>
-               </div>
-            
-            <div class="slides slides4 slides6 slides7">
-               <div class='navsection2'>
-                  <div class='link2 activeblack' data-top="scrollTop_s4_1"><a href="#scrollTop_s4_1">Instructional
-                        Focus</a></div>
-                  <div class='link2 linktop2_1' data-top="scrollTop_s4_2"><a href="#scrollTop_s4_2">Summary</a></div>
-                  <div class='link2 linktop2_2' data-top="scrollTop_s4_3"><a href="#scrollTop_s4_3">Before Reading</a>
-                  </div>
-                  <div class='link2 linktop2_3' data-top="scrollTop_s4_4"><a href="#scrollTop_s4_4">During Reading</a>
-                  </div>
-                  <div class='link2 linktop2_4' data-top="scrollTop_s4_5"><a href="#scrollTop_s4_5">After Reading</a>
-                  </div>
-                  <!-- <div class='link1 linktop5'>Vocabulary</div> -->
-               </div>
-               <div class='scroller'>
-                  <div class="tittleDiv">
-                     <div class="tittleContainer">
-                        <span class="tittle1 headingRole">Name the Full Moons</span>
-                        <span class="tittle2">by Thomas Taylor</span>
-                        <span class="tittle3">Informational Text - Word Count: 432 Lexile: 510L</span>
-                     </div>
-                  </div>
-                  <div class="nameofMoonsDiv">
-                     <span class="moonsTxt">Name the Full Moons</span>
-                     <span class="moonsTxt2">Student Text Preview</span>
-                  </div>
-                  <div class="textContainer">
-                     <span class="headers header1 headingRole" id="scrollTop_s4_1">Instructional Focus</span>
-                     <div class="hrLine line1"></div>
-                     <p class="contents con1">
-                        <b>Science Standard: 1-ESS1-1.</b> Use observations of the sun, moon, and stars to describe
-                        patterns that
-                        can be predicted.
-                     </p>
-                     <p class="contents con2">
-                        <b>Content Objective:</b> Students will learn the name of the full moon for each month of the
-                        year.<br>
-                        <b>Language Objective:</b> Students will describe the connection between the moon names and the
-                        time of year.
-                     </p>
-                     <p class="contents con3">
-                        <b>Text Structure Objective:</b> Students will understand how a descriptive text structure
-                        describes things and ideas.<br>
-                        <b>Text Feature Objective:</b> Students will understand how photographs help them understand
-                        what a
-                        writer is describing.
-                     </p>
-                     <div class="paragraph">
-                        <span class="paraHeader headingRole" id="scrollTop_s4_2">SUMMARY</span>
-                        <div class="paraLine"></div>
-                        <div class="paraContent">
-                           <p>
-                              Did you ever wonder how the Harvest Moon got its name? This text shares the Native
-                              American
-                              origins for the name of the full moon of each month.
-                           </p>
-                        </div>
-                     </div>
-                     <div class="paragraph ph1">
-                        <span class="paraHeader headingRole" id="scrollTop_s4_3">BEFORE READING</span>
-                        <div class="paraLine"></div>
-                        <div class="paraContent">
-                           <p>
-                              <b>BIG QUESTION</b><br><span class="">Remind students of the Big Question: Why do people
-                                 observe the night sky?</span><br> Ask: <span class="blue">How do you think <i>Name the
-                                    Full Moons</i> will help you think about the Big Question?</span>
-                           </p>
-
-                           <p>
-                              <b>PREVIEW VOCABULARY</b><br> Have students find and read sentences in the text that have
-                              the
-                              words <b><i>full
-                                    moon</i></b>, <b><i>moon</i></b>, and <b><i>season</i></b>. Discuss the meaning of
-                              each word with the
-                              class.<br> Ask: <span class="blue">How often do
-                                 you see a <b>full moon</b> in the sky? What does it look like to you? Does the
-                                 <b>moon</b> have a
-                                 different
-                                 feeling to it in different <b>seasons</b>?</span>
-                           </p>
-
-                           <p>
-                              <b>ORAL VOCABULARY</b><br> Much of the vocabulary in <i>Name the Full Moons</i> might be
-                              familiar to most students, but other texts in this set include words that might be new or
-                              challenging. During class discussions, use these new terms repeatedly to help students
-                              become familiar with them.<br> For example: <span class="blue">When we <b>observe</b>
-                                 something, we look at it carefully. What do you notice when you observe a full
-                                 moon?</span>
-                           </p>
-
-                           <p>
-                              <b>WORD WEB</b><br> Share a Word Web graphic organizer. To help students think about the
-                              relationships
-                              between words, guide them in creating a word web using the word <i>moon</i>. When they
-                              read <i>Name the
-                                 Full Moons</i>, encourage them to add words to their web that relate to the word
-                              <i>moon</i>. A web for<i>
-                                 moon</i> might look like this:
-                           </p>
-                        </div>
-                     </div>
-                     <img src="assets/images/1.png" class="moonsImg" />
-                     <div class="paragraph ph2">
-                        <span class="paraHeader headingRole" id="scrollTop_s4_4">During Reading</span>
-                        <div class="paraLine"></div>
-                        <div class="paraContent">
-                           <p>
-                              <b>ELEMENTS OF INFORMATIONAL TEXT</b><br> <b>Text Structure</b> Explain to students that
-                              <i>Name
-                                 the Full Moons</i> is
-                              written with a descriptive text structure. Say: <span class="blue">When writers want to
-                                 explain something, they describe what it is or how it works. Project the text or direct
-                                 students to p. 7 of Name the Full Moons on their devices.</span> Say: <span class="blue">As
-                                    writers describe something they give details about that thing. The more details the
-                                    writer gives, the better you understand. Have volunteers share details from the
-                                    text that describe how the full moon in April got its name.</span>
-         
-
-                                    Display a T-chart graphic organizer. In the left column, write “Descriptive
-                                    Structure.” Work with the class to fill in the right column with what they know
-                                    about descriptive structure, and how it helps them understand the writer’s ideas.
-                                    For example: “gives details,” “explains something”
-
-                                    Text Features Say: <span class="blue">Using pictures can help explain an idea. Point to
-                                       the photograph on p. 6.</span><br>
-                                        Ask: <span class="blue">What does this picture show? How
-                                          does this picture help you understand why the full moon in March is called the
-                                          Worm Moon? (Possible response: It shows worms.)</span>
-
-                                          Return to the T-chart. In the left column write “Pictures.” Work with the
-                                          class to fill in the right column with examples of how pictures help readers
-                                          understand the text. For example: “show what the words tell about.”
-                           </p>
-                           <!-- <p>
-                              <b>Text Features</b> Say: Using pictures can help explain an idea. Point to the photograph
-                              on
-                              p. x.
-                              Ask: What does this picture show? How does this picture help you understand why the full
-                              moon
-                              in March is called the Worm Moon? (Possible response: It shows worms.)
-                           </p>
-                           <p>
-                              <b>Track the Texts:</b> Have students use the <b><a href="#">Observing the Night Sky:
-                                    Track the Texts</a></b>
-                              graphic
-                              organizer. As they read, have them fill in the <b><i>Name the Full Moons</i></b> column
-                              with the
-                              name of
-                              the text structure, and any text features they noticed, including photographs.
-                           </p> -->
-                        </div>
-                     </div>
-                     <div class="paragraph ph3">
-                        <span class="paraHeader headingRole" id="scrollTop_s4_5">After Reading</span>
-                        <div class="paraLine"></div>
-                        <div class="paraContent">
-                           <p>
-                              <b>VOCABULARY</b><br />
-                              After students have read <b>Name the Full Moons</b>, have them review their completed word
-                              webs Ask: <span class="blue">Are there any more words that you would like to
-                                 add?</span><br />
-                              Display these images from <b>Name the Full Moons</b> to help students as they think about
-                              words related to <i>moon</i>.<br /><br />
-
-                              <p>
-                                 <img src="assets/images/Screen Shot 2021-10-11 at 12.26.20 PM.png" class="moon1"/>
-                                 <img src="assets/images/Screen Shot 2021-10-11 at 12.26.56 PM.png" class="moon2"/>
-                                 <img src="assets/images/Screen Shot 2021-10-11 at 12.27.40 PM.png" class="moon3"/>
-                              </p>
-                              <div class="moonsnextTxt"> 
-                              <b>DISCUSS ACROSS TEXTS</b><br />
-                              Encourage students to make connections between <i>Name the Full Moons</i> and other texts
-                              they have read on related subjects.
-                           <ul>
-                              <li>In <i>Name the Full Moons</i>, we learned that the moon can have many names. What
-                                 other facts have you read about the moon?</li>
-                              <li><i>Name the Full Moons</i> describes how the time of year affects how people think
-                                 about the moon. What else have you read about how the moon changes over time?</li>
-                              <li>Think back to what you read about the moon in<i> In the Sky</i>. What more did you
-                                 learn about the moon from reading <i>Name the Full Moons</i>?</li>
-                           </ul>
-
-                           <b>Track the Texts:</b> After the discussion, Work with the class to fill in the <i><b>Name the Full Moons</b></i> row with things they learned about the moon<br /><br />
-
-
-                           <b>DISCUSS THE BIG QUESTION</b><br> Lead a class discussion around this text’s Big Question:
-                           <i>Why do people observe the night sky?</i> As students share their ideas, draw out more
-                           information from them with follow-up questions such as, “Can you say more about that?” or
-                           “What are some examples of that?”
-                           <ul>
-                              <li>How do you think the naming of the full moons can be useful?</li>
-                              <li> How does
-                                 knowing the names of the full moons help you think about the different parts of the
-                                 year? Why
-                                 is that important?</li>
-                           </ul>
-                           </p>
-
-                           <p class="he1">
-                              <b>WRITE ABOUT THE BIG QUESTION</b><br>
-                              Have students make up their own names for full moons based on
-                              the time of year they appear. For example, they might name the full moon in July the
-                              Fireworks Moon. Have them draw a picture of their moon, with details showing how it got
-                              its
-                              name.
-                              <br>
-                              <br>
-                              <br>
-                           </p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+        </div>
+    </div>
+    <div id="slide-text2" class="container-fs slide slide-after-reading">
+        <div class="banner-bg-small"></div>
+        <div class="container-mxw">
+            <div class="left-side-bar">
+                <div class="side-nav">
+                    <div class="side-nav-circle"></div>
+                    <ul>
+                        <li><a class="active" href="#scrollTop_s1_1">Wrap It Up</a></li>
+                        <li><a href="#scrollTop_s1_2">Vocabulary Round-Up</a></li>
+                        <li><a href="#scrollTop_s1_3">Discuss The Text Set's Big Question</a></li>
+                        <li><a href="#scrollTop_s1_4">Culminating Projects</a></li>
+                    </ul>
+                </div>
             </div>
-         </div>
-         <div class="externalDivs slide1Disclaimer">
-            <div class="disclaimerHeader headingRole">Disclaimer</div>
-            <img class='concave' src='assets/images/4b.png'>
-            <div class="disclaimerContent">
-               By clicking the highlighted text, you will be leaving the my Perspectives Program to enter into an
-               external website that may contain content or resources for adults. Savvas does not guarantee, approve or
-               endorse the content, resources or products available at these websites, nor does a link indicate any
-               association with or endorsement by the linked website to Savvas Learning Company LLC. The linked website
-               has its own legal terms and policies, including a privacy policy and community guidelines. We recommend
-               that you review any terms of use and all policies and guidelines of such websites before supplying
-               information to or otherwise using those websites or their products and services. We at Savvas Learning
-               Company LLC do not control these third party websites and are not responsible or liable for the
-               performance of these websites, their services or any of the content and resources contained on them.
+            <div class="content-panel">
+                <div class="title-wrap">
+                    <h1 class="title">Observing the Night Sky</h1>
+                </div>
+                <div class="text-content">
+                    <h2>Wrap It Up</h2>
+                    <p>Now that the class has read some or all of the texts in this set, it is time to pull together all the information they have learned from their reading in order to explore and share their evolving understanding of the Big Question.</p>
+                    
+                    <h2>Vocabulary Round-Up</h2>
+                    <p><span class="bold">Word Sort</span> Have students review the word webs they have created for the texts they have read, and then do a word sort, identifying new connections between the words using all the information they now have from their reading. For example, students might connect the words crescent, full moon, gibbous, phase, and moon, as they're all related to phases of the moon.</p>
+                    <p>Ask students to share their word sorts and explain why they connected the words the way they did. Students may sort words based on their own experiences, so accept all reasonable explanations for the connections they make.</p>
+                    <h2>Discuss The Text Set's Big Question</h2>
+                    <p>Guide a class discussion around the Big Question: <i>What can we learn by observing the night sky?</i> Encourage students to bring in knowledge they have learned from all the texts they have read in the text set, using as many of the words from their word webs as they can. </p>
+                    <ul class="small-bullet">
+                        <li>What did you already know about things in the sky before you began reading this text set?</li>
+                        <li>Now that you’ve read a lot of books about the sky, what new things did you learn?</li>
+                        <li>What about the night sky would you like to learn more about?</li>
+                        <li>Which texts were most useful in helping you answer the Big Question?</li>
+                    </ul>
+                    <button class="blue-button">Activity Support</button>
+                    <h2>Culminating Projects</h2>
+                    <p>Have students apply what they’ve learned from the text set to demonstrate and enhance their understanding. Review the <a href="#">Project Rubric</a> with students, explaining in detail the expectations for the project.</p>
+                    <p><span class="bold">Sky Tour!</span></p>
+                    <p>Have students draw a picture of the night sky. Ask them to make sure they include at least three objects they read about in this text set.</p>
+                    <p>Have them plan and practice how they would give a tour of the night sky. What would they say about each thing in the sky? What interesting information from their reading would they share?</p>
+                    <p>Students can refer to what they wrote in Write About the Big Question for each text to aid their thinking and planning. They may also use the <a href="#">Project Template</a> to help them organize and clarify their thinking as they plan their projects. Encourage them to use the vocabulary they’ve learned from the texts in their tours.</p>
+                    <p>When they are finished planning their tours, provide students with a variety of settings in which they can share their tours, such as in a small group setting, for the whole class, or with a single partner.</p>
+                    <p class="last-p">&nbsp;</p>
+                </div>
             </div>
-            <i id="closeIcon" class="far fa-times-circle"
-               style="position: absolute;font-size: 32px;right:10px;top: 10px;cursor: pointer;"></i>
-         </div>
-      </div>
-   </div>
-   <script src="assets/js/main.js"></script>
+        </div>
+    </div>
+    <div id="slide-text3" class="container-fs slide slide-after-reading">
+        <div class="banner-bg-small"></div>
+        <div class="container-mxw">
+            <div class="left-side-bar">
+                <div class="side-nav">
+                    <div class="side-nav-circle"></div>
+                    <ul>
+                        <li><a class="active" href="#scrollTop_s1_1">Wrap It Up</a></li>
+                        <li><a href="#scrollTop_s1_2">Vocabulary Round-Up</a></li>
+                        <li><a href="#scrollTop_s1_3">Discuss The Text Set's Big Question</a></li>
+                        <li><a href="#scrollTop_s1_4">Culminating Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-panel">
+                <div class="title-wrap">
+                    <h1 class="title">Observing the Night Sky</h1>
+                </div>
+                <div class="text-content">
+                    <h2>Wrap It Up</h2>
+                    <p>Now that the class has read some or all of the texts in this set, it is time to pull together all the information they have learned from their reading in order to explore and share their evolving understanding of the Big Question.</p>
+                    
+                    <h2>Vocabulary Round-Up</h2>
+                    <p><span class="bold">Word Sort</span> Have students review the word webs they have created for the texts they have read, and then do a word sort, identifying new connections between the words using all the information they now have from their reading. For example, students might connect the words crescent, full moon, gibbous, phase, and moon, as they're all related to phases of the moon.</p>
+                    <p>Ask students to share their word sorts and explain why they connected the words the way they did. Students may sort words based on their own experiences, so accept all reasonable explanations for the connections they make.</p>
+                    <h2>Discuss The Text Set's Big Question</h2>
+                    <p>Guide a class discussion around the Big Question: <i>What can we learn by observing the night sky?</i> Encourage students to bring in knowledge they have learned from all the texts they have read in the text set, using as many of the words from their word webs as they can. </p>
+                    <ul class="small-bullet">
+                        <li>What did you already know about things in the sky before you began reading this text set?</li>
+                        <li>Now that you’ve read a lot of books about the sky, what new things did you learn?</li>
+                        <li>What about the night sky would you like to learn more about?</li>
+                        <li>Which texts were most useful in helping you answer the Big Question?</li>
+                    </ul>
+                    <button class="blue-button">Activity Support</button>
+                    <h2>Culminating Projects</h2>
+                    <p>Have students apply what they’ve learned from the text set to demonstrate and enhance their understanding. Review the <a href="#">Project Rubric</a> with students, explaining in detail the expectations for the project.</p>
+                    <p><span class="bold">Sky Tour!</span></p>
+                    <p>Have students draw a picture of the night sky. Ask them to make sure they include at least three objects they read about in this text set.</p>
+                    <p>Have them plan and practice how they would give a tour of the night sky. What would they say about each thing in the sky? What interesting information from their reading would they share?</p>
+                    <p>Students can refer to what they wrote in Write About the Big Question for each text to aid their thinking and planning. They may also use the <a href="#">Project Template</a> to help them organize and clarify their thinking as they plan their projects. Encourage them to use the vocabulary they’ve learned from the texts in their tours.</p>
+                    <p>When they are finished planning their tours, provide students with a variety of settings in which they can share their tours, such as in a small group setting, for the whole class, or with a single partner.</p>
+                    <p class="last-p">&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slide-text4" class="container-fs slide slide-after-reading">
+        <div class="banner-bg-small"></div>
+        <div class="container-mxw">
+            <div class="left-side-bar">
+                <div class="side-nav">
+                    <div class="side-nav-circle"></div>
+                    <ul>
+                        <li><a class="active" href="#scrollTop_s1_1">Wrap It Up</a></li>
+                        <li><a href="#scrollTop_s1_2">Vocabulary Round-Up</a></li>
+                        <li><a href="#scrollTop_s1_3">Discuss The Text Set's Big Question</a></li>
+                        <li><a href="#scrollTop_s1_4">Culminating Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-panel">
+                <div class="title-wrap">
+                    <h1 class="title">Observing the Night Sky</h1>
+                </div>
+                <div class="text-content">
+                    <h2>Wrap It Up</h2>
+                    <p>Now that the class has read some or all of the texts in this set, it is time to pull together all the information they have learned from their reading in order to explore and share their evolving understanding of the Big Question.</p>
+                    
+                    <h2>Vocabulary Round-Up</h2>
+                    <p><span class="bold">Word Sort</span> Have students review the word webs they have created for the texts they have read, and then do a word sort, identifying new connections between the words using all the information they now have from their reading. For example, students might connect the words crescent, full moon, gibbous, phase, and moon, as they're all related to phases of the moon.</p>
+                    <p>Ask students to share their word sorts and explain why they connected the words the way they did. Students may sort words based on their own experiences, so accept all reasonable explanations for the connections they make.</p>
+                    <h2>Discuss The Text Set's Big Question</h2>
+                    <p>Guide a class discussion around the Big Question: <i>What can we learn by observing the night sky?</i> Encourage students to bring in knowledge they have learned from all the texts they have read in the text set, using as many of the words from their word webs as they can. </p>
+                    <ul class="small-bullet">
+                        <li>What did you already know about things in the sky before you began reading this text set?</li>
+                        <li>Now that you’ve read a lot of books about the sky, what new things did you learn?</li>
+                        <li>What about the night sky would you like to learn more about?</li>
+                        <li>Which texts were most useful in helping you answer the Big Question?</li>
+                    </ul>
+                    <button class="blue-button">Activity Support</button>
+                    <h2>Culminating Projects</h2>
+                    <p>Have students apply what they’ve learned from the text set to demonstrate and enhance their understanding. Review the <a href="#">Project Rubric</a> with students, explaining in detail the expectations for the project.</p>
+                    <p><span class="bold">Sky Tour!</span></p>
+                    <p>Have students draw a picture of the night sky. Ask them to make sure they include at least three objects they read about in this text set.</p>
+                    <p>Have them plan and practice how they would give a tour of the night sky. What would they say about each thing in the sky? What interesting information from their reading would they share?</p>
+                    <p>Students can refer to what they wrote in Write About the Big Question for each text to aid their thinking and planning. They may also use the <a href="#">Project Template</a> to help them organize and clarify their thinking as they plan their projects. Encourage them to use the vocabulary they’ve learned from the texts in their tours.</p>
+                    <p>When they are finished planning their tours, provide students with a variety of settings in which they can share their tours, such as in a small group setting, for the whole class, or with a single partner.</p>
+                    <p class="last-p">&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slide-text5" class="container-fs slide slide-after-reading">
+        <div class="banner-bg-small"></div>
+        <div class="container-mxw">
+            <div class="left-side-bar">
+                <div class="side-nav">
+                    <div class="side-nav-circle"></div>
+                    <ul>
+                        <li><a class="active" href="#scrollTop_s1_1">Wrap It Up</a></li>
+                        <li><a href="#scrollTop_s1_2">Vocabulary Round-Up</a></li>
+                        <li><a href="#scrollTop_s1_3">Discuss The Text Set's Big Question</a></li>
+                        <li><a href="#scrollTop_s1_4">Culminating Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-panel">
+                <div class="title-wrap">
+                    <h1 class="title">Observing the Night Sky</h1>
+                </div>
+                <div class="text-content">
+                    <h2>Wrap It Up</h2>
+                    <p>Now that the class has read some or all of the texts in this set, it is time to pull together all the information they have learned from their reading in order to explore and share their evolving understanding of the Big Question.</p>
+                    
+                    <h2>Vocabulary Round-Up</h2>
+                    <p><span class="bold">Word Sort</span> Have students review the word webs they have created for the texts they have read, and then do a word sort, identifying new connections between the words using all the information they now have from their reading. For example, students might connect the words crescent, full moon, gibbous, phase, and moon, as they're all related to phases of the moon.</p>
+                    <p>Ask students to share their word sorts and explain why they connected the words the way they did. Students may sort words based on their own experiences, so accept all reasonable explanations for the connections they make.</p>
+                    <h2>Discuss The Text Set's Big Question</h2>
+                    <p>Guide a class discussion around the Big Question: <i>What can we learn by observing the night sky?</i> Encourage students to bring in knowledge they have learned from all the texts they have read in the text set, using as many of the words from their word webs as they can. </p>
+                    <ul class="small-bullet">
+                        <li>What did you already know about things in the sky before you began reading this text set?</li>
+                        <li>Now that you’ve read a lot of books about the sky, what new things did you learn?</li>
+                        <li>What about the night sky would you like to learn more about?</li>
+                        <li>Which texts were most useful in helping you answer the Big Question?</li>
+                    </ul>
+                    <button class="blue-button">Activity Support</button>
+                    <h2>Culminating Projects</h2>
+                    <p>Have students apply what they’ve learned from the text set to demonstrate and enhance their understanding. Review the <a href="#">Project Rubric</a> with students, explaining in detail the expectations for the project.</p>
+                    <p><span class="bold">Sky Tour!</span></p>
+                    <p>Have students draw a picture of the night sky. Ask them to make sure they include at least three objects they read about in this text set.</p>
+                    <p>Have them plan and practice how they would give a tour of the night sky. What would they say about each thing in the sky? What interesting information from their reading would they share?</p>
+                    <p>Students can refer to what they wrote in Write About the Big Question for each text to aid their thinking and planning. They may also use the <a href="#">Project Template</a> to help them organize and clarify their thinking as they plan their projects. Encourage them to use the vocabulary they’ve learned from the texts in their tours.</p>
+                    <p>When they are finished planning their tours, provide students with a variety of settings in which they can share their tours, such as in a small group setting, for the whole class, or with a single partner.</p>
+                    <p class="last-p">&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slide-after-reading" class="container-fs slide slide-after-reading">
+        <div class="banner-bg-small"></div>
+        <div class="container-mxw">
+            <div class="left-side-bar">
+                <div class="side-nav">
+                    <div class="side-nav-circle"></div>
+                    <ul>
+                        <li><a class="active" href="#scrollTop_s1_1">Wrap It Up</a></li>
+                        <li><a href="#scrollTop_s1_2">Vocabulary Round-Up</a></li>
+                        <li><a href="#scrollTop_s1_3">Discuss The Text Set's Big Question</a></li>
+                        <li><a href="#scrollTop_s1_4">Culminating Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-panel">
+                <div class="title-wrap">
+                    <h1 class="title">Observing the Night Sky</h1>
+                </div>
+                <div class="text-content">
+                    <h2>Wrap It Up</h2>
+                    <p>Now that the class has read some or all of the texts in this set, it is time to pull together all the information they have learned from their reading in order to explore and share their evolving understanding of the Big Question.</p>
+                    
+                    <h2>Vocabulary Round-Up</h2>
+                    <p><span class="bold">Word Sort</span> Have students review the word webs they have created for the texts they have read, and then do a word sort, identifying new connections between the words using all the information they now have from their reading. For example, students might connect the words crescent, full moon, gibbous, phase, and moon, as they're all related to phases of the moon.</p>
+                    <p>Ask students to share their word sorts and explain why they connected the words the way they did. Students may sort words based on their own experiences, so accept all reasonable explanations for the connections they make.</p>
+                    <h2>Discuss The Text Set's Big Question</h2>
+                    <p>Guide a class discussion around the Big Question: <i>What can we learn by observing the night sky?</i> Encourage students to bring in knowledge they have learned from all the texts they have read in the text set, using as many of the words from their word webs as they can. </p>
+                    <ul class="small-bullet">
+                        <li>What did you already know about things in the sky before you began reading this text set?</li>
+                        <li>Now that you’ve read a lot of books about the sky, what new things did you learn?</li>
+                        <li>What about the night sky would you like to learn more about?</li>
+                        <li>Which texts were most useful in helping you answer the Big Question?</li>
+                    </ul>
+                    <button class="blue-button">Activity Support</button>
+                    <h2>Culminating Projects</h2>
+                    <p>Have students apply what they’ve learned from the text set to demonstrate and enhance their understanding. Review the <a href="#">Project Rubric</a> with students, explaining in detail the expectations for the project.</p>
+                    <p><span class="bold">Sky Tour!</span></p>
+                    <p>Have students draw a picture of the night sky. Ask them to make sure they include at least three objects they read about in this text set.</p>
+                    <p>Have them plan and practice how they would give a tour of the night sky. What would they say about each thing in the sky? What interesting information from their reading would they share?</p>
+                    <p>Students can refer to what they wrote in Write About the Big Question for each text to aid their thinking and planning. They may also use the <a href="#">Project Template</a> to help them organize and clarify their thinking as they plan their projects. Encourage them to use the vocabulary they’ve learned from the texts in their tours.</p>
+                    <p>When they are finished planning their tours, provide students with a variety of settings in which they can share their tours, such as in a small group setting, for the whole class, or with a single partner.</p>
+                    <p class="last-p">&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fs-popup">
+        <nav class="topMenuBar1">
+            <ul class="menu">
+                <li><a><img class='bkimg' src='assets/images/exit-icon.png' />Exit</a></li>
+            </ul>
+            <div class="menutext">Grade 1 Science | Observing the Night Sky</div>
+        </nav>
+        <div class="row disclaimerRow">
+            <div class="col-3 disclaimerConcave">
+                <img class="concave" src="assets/images/4b.png" alt="Placeholder">
+            </div>
+            <div class="col-6 disclaimerContent">
+                <h1 class="disclaimerHeader">Disclaimer</h1>
+                By clicking the highlighted text, you will be leaving the my Perspectives Program to enter into an
+                external website that may contain content or resources for adults. Savvas does not guarantee, approve or
+                endorse the content, resources or products available at these websites, nor does a link indicate any
+                association with or endorsement by the linked website to Savvas Learning Company LLC. The linked website
+                has its own legal terms and policies, including a privacy policy and community guidelines. We recommend
+                that you review any terms of use and all policies and guidelines of such websites before supplying
+                information to or otherwise using those websites or their products and services. We at Savvas Learning
+                Company LLC do not control these third party websites and are not responsible or liable for the
+                performance of these websites, their services or any of the content and resources contained on them.
+            </div>
+            <div class="col-3"></div>
+        </div>
+        <i id="closeIcon" class="far fa-times-circle disclaimerClose" role="button" tabindex="0"></i>
+    </div>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
