@@ -25,15 +25,19 @@ $(document).ready(function () {
         $(".annim4-33").removeClass("annim4-33")
         $(".annim4-44").removeClass("annim4-44")
         $(".annim4-55").removeClass("annim4-55")
-
-    },10000)
+        $(".annim4-111").removeClass("annim4-111")
+        $(".annim4-222").removeClass("annim4-222")
+        $(".annim4-333").removeClass("annim4-333")
+        $(".annim4-444").removeClass("annim4-444")
+        $(".annim4-555").removeClass("annim4-555")
+    },3000)
 });
 
 $(document).on('click', '.link-learmore', function (event) {
     if (event.type === 'click' || (event.type === 'keydown') && (event.keyCode === 13 || event.keyCode === 32)) {
         event.preventDefault();
         $(".container-fs").HideElement();
-        $('.container-fs-popup').ShowElement();
+        $('.container-fs-popup.disclaimer').ShowElement();
     }
 });
 
@@ -41,7 +45,7 @@ $(document).on('click', '#closeIcon', function (event) {
     if (event.type === 'click' || (event.type === 'keydown') && (event.keyCode === 13 || event.keyCode === 32)) {
         event.preventDefault();
         $(".container-fs").ShowElement();
-        $('.container-fs-popup').HideElement();
+        $('.container-fs-popup.disclaimer').HideElement();
         setTabIndex();
         lastFocusedElement.focus();
     }
@@ -59,7 +63,21 @@ $(document).on("click", '.link-tab', function(event){
 });
 
 $(document).on("click", ".side-nav-circle ul li a", function(event){
-    debugger;
     $(".side-nav-circle ul li a").removeClass("active");
     $(this).addClass("active");
 })
+
+$(document).on("click", ".card-body .card-link", function(event){
+    var tablinkid = $(this).attr("data-tablinkid");
+    $("#" + tablinkid).trigger( "click" );
+})
+$(document).on("click", "#linkNameTheFullMoon", function(event){
+    $(".container-fs").HideElement();
+    $('.container-fs-popup.fullmoon').ShowElement();
+})
+
+$(document).on("click", "#close-fullmoonimage", function(event){
+    $(".container-fs").ShowElement();
+    $('.container-fs-popup.fullmoon').HideElement();
+})
+
