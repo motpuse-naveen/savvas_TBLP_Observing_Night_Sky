@@ -391,7 +391,7 @@ body, html {
     max-width: 100%;
 }
 
-.disclaimerClose {
+.popup-close-btn {
     position: absolute;
     font-size: 32px;
     right: 15px;

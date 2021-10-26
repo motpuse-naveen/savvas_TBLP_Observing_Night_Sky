@@ -41,7 +41,7 @@ $(document).on('click', '.link-learmore', function (event) {
     }
 });
 
-$(document).on('click', '#closeIcon', function (event) {
+$(document).on('click', '#disclaimerClose', function (event) {
     if (event.type === 'click' || (event.type === 'keydown') && (event.keyCode === 13 || event.keyCode === 32)) {
         event.preventDefault();
         $(".container-fs").ShowElement();
@@ -77,6 +77,10 @@ $(document).on("click", "#linkNameTheFullMoon", function(event){
 })
 
 $(document).on("click", "#close-fullmoonimage", function(event){
+    $(".container-fs").ShowElement();
+    $('.container-fs-popup.fullmoon').HideElement();
+})
+$(document).on("click", "#fullmoonClose", function(event){
     $(".container-fs").ShowElement();
     $('.container-fs-popup.fullmoon').HideElement();
 })
