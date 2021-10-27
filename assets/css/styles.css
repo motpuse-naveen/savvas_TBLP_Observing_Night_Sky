@@ -578,11 +578,16 @@ table.table-style2 .trbg {
     padding: 10px;
     font-size: 14px;
 }
-.text-content figure.right-image figcaption a{
+.text-content figure.right-image figcaption a.normlink{
     color:#0072EE;
     font-family:'poppins-semibold';
     font-size: 20px;
     text-decoration: underline;
+}
+a.graylink{
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
 }
 .popuprow{
     margin-top: 35px;
@@ -710,6 +715,7 @@ table.table-style2 .trbg {
     top: 177px;
     color: white;
 }
+
 @-webkit-keyframes floatText{
     from {
       margin-left: 200px;

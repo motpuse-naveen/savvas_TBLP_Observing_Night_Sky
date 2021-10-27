@@ -59,6 +59,7 @@ $(document).on("click", '.link-tab', function(event){
         $(this).addClass("active")
         $(".container-fs.slide").InactiveTabs();
         $("#" + dataid).ActiveTabs();
+        $(".side-nav li a").removeClass("active");
     }
 });
 
@@ -71,7 +72,7 @@ $(document).on("click", ".card-body .card-link", function(event){
     var tablinkid = $(this).attr("data-tablinkid");
     $("#" + tablinkid).trigger( "click" );
 })
-$(document).on("click", "#linkNameTheFullMoon", function(event){
+$(document).on("click", "#linkNameTheFullMoon,#linkStudentTextPreview", function(event){
     $(".container-fs").HideElement();
     $('.container-fs-popup.fullmoon').ShowElement();
 })
