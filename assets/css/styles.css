@@ -704,6 +704,12 @@ table.table-style2 .trbg {
 .mt220{
     margin-top: 220px;
 }
+.imageicon{
+    position: absolute;
+    right: 10px;
+    top: 177px;
+    color: white;
+}
 @-webkit-keyframes floatText{
     from {
       margin-left: 200px;
