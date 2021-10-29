@@ -46,8 +46,6 @@ $(document).on('click', '#disclaimerClose', function (event) {
         event.preventDefault();
         $(".container-fs").ShowElement();
         $('.container-fs-popup.disclaimer').HideElement();
-        setTabIndex();
-        lastFocusedElement.focus();
     }
 });
 
@@ -64,10 +62,12 @@ $(document).on('click', '#discussiontipClose', function (event) {
         event.preventDefault();
         $(".container-fs").ShowElement();
         $('.container-fs-popup.discussiontip').HideElement();
-        setTabIndex();
-        lastFocusedElement.focus();
     }
 });
+$(document).on("click", "#close-discussiontip", function(event){
+    $(".container-fs").ShowElement();
+    $('.container-fs-popup.discussiontip').HideElement();
+})
 
 $(document).on("click", '.link-tab', function(event){
     //debugger;

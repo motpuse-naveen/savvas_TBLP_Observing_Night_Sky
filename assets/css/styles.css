@@ -368,6 +368,9 @@ body, html {
 .card-back p {
     margin-bottom: 8px;
 }
+.card-back .imageicon{
+    color: #000;
+}
 
 .card-cover-img:hover .card-back {
     display: block;
@@ -410,10 +413,20 @@ body, html {
     font-family: 'poppins-light';
     font-size: 16px;
 }
-
 .disclaimerHeader {
     font-family: 'poppins-semibold';
     margin-bottom: 2rem;
+}
+.discussiontipContent {
+    font-family: 'poppins-light';
+    font-size: 16px;
+    overflow: auto;
+    height: 100%;
+}
+.discussiontipHeader {
+    font-family: 'poppins-semibold';
+    margin-bottom: 1rem;
+    margin-top: 4rem;
 }
 
 .content-panel .text-content {
@@ -471,19 +484,19 @@ ul.small-bullet li {
 }
 
 table.table-style1 {
-    border: 1px solid #000000;
+    border: 0.5px solid #000000;
     font-family: 'poppins-light';
 }
 
 table.table-style1 th {
-    border: 1px solid #000000;
+    border: 0.5px solid #000000;
     padding: 0px 5px;
     font-weight: bold;
     font-family: 'poppins-semibold'
 }
 
 table.table-style1 td {
-    border: 1px solid #000000;
+    border: 0.5px solid #000000;
     padding: 0px 5px;
     text-align: center;
 
@@ -502,19 +515,19 @@ table.table-style1 tr.trbg  td:first-child{
 }
 
 table.table-style2 {
-    border: 1px solid #000000;
+    border: 0.5px solid #000000;
     font-family: 'poppins-light';
 }
 
 table.table-style2 th {
-    border: 1px solid #000000;
+    border: 0.5px solid #000000;
     padding: 0px 5px;
     font-weight: bold;
     font-family: 'poppins-semibold'
 }
 
 table.table-style2 td {
-    border: 1px solid #000000;
+    border: 0.5px solid #000000;
     padding: 0px 5px;
     text-align: center;
 }
