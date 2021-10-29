@@ -51,6 +51,24 @@ $(document).on('click', '#disclaimerClose', function (event) {
     }
 });
 
+$(document).on('click', '#btn-discussiontip', function (event) {
+    if (event.type === 'click' || (event.type === 'keydown') && (event.keyCode === 13 || event.keyCode === 32)) {
+        event.preventDefault();
+        $(".container-fs").HideElement();
+        $('.container-fs-popup.discussiontip').ShowElement();
+    }
+});
+
+$(document).on('click', '#discussiontipClose', function (event) {
+    if (event.type === 'click' || (event.type === 'keydown') && (event.keyCode === 13 || event.keyCode === 32)) {
+        event.preventDefault();
+        $(".container-fs").ShowElement();
+        $('.container-fs-popup.discussiontip').HideElement();
+        setTabIndex();
+        lastFocusedElement.focus();
+    }
+});
+
 $(document).on("click", '.link-tab', function(event){
     //debugger;
     if(!$(this).hasClass("active")){
