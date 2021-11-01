@@ -69,11 +69,8 @@ $(document).on("click", '.link-tab', function(event){
         $(this).addClass("active").attr("aria-selected","true")
         $("#" + dataid).find(".side-nav li a").removeClass("active").attr("aria-current", "false").removeAttr("aria-describedby");
         $("#" + dataid).ActiveTabs();
-        //$("#" + dataid).find(".title-wrap .title").get(0).focus()
-        //alert($("#" + dataid).find(".title-wrap .title").text())
-        $(".container-fs.slide:not(#" + dataid +")").InactiveTabs();
-        //$(".title-wrap .title:first").get(0).focus()
         $("#" + dataid).find(".side-nav li a:first").focus();
+        $(".container-fs.slide:not(#" + dataid +")").InactiveTabs();
     }
 });
 
