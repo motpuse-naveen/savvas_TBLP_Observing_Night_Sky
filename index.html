@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Grade 1 Science | Observing the Night Sky</title>
     <link rel="stylesheet" href="assets/css/reset.css">
@@ -26,7 +25,7 @@
     <div class="container-fs bb fixed-head-bar">
         <nav class="topMenuBar1">
             <ul class="menu">
-                <li><a><img class='bkimg' src='assets/images/exit-icon.png' />Exit</a></li>
+                <li><a><img class='bkimg' src='assets/images/exit-icon.png' aria-hidden="true" alt="exit" />Exit</a></li>
             </ul>
             <div class="menutext">Grade 1 Science | Observing the Night Sky</div>
         </nav>
@@ -35,31 +34,33 @@
                 <ul class="menu d-flex">
                     <li class="flex-fill">
                         <a href="#" id="tablinkfirst" class="link-tab active" data-tabid="slide-before-reading"
-                            slideNumber="1">Get Started</a>
+                            slideNumber="1" role="tab" aria-selected="true" aria-controls="slide-before-reading">Get
+                            Started</a>
                     </li>
                     <li class="flex-fill">
-                        <a href="#" id="tablinktext1" class="link-tab inactive" data-tabid="slide-text1"
-                            slideNumber="2">Text 1</a>
+                        <a href="#" id="tablinktext1" class="link-tab inactive" data-tabid="slide-text1" slideNumber="2"
+                            role="tab" aria-selected="false" aria-controls="slide-text1">Text 1</a>
                     </li>
                     <li class="flex-fill">
-                        <a href="#" id="tablinktext2" class="link-tab inactive" data-tabid="slide-text2"
-                            slideNumber="3">Text 2</a>
+                        <a href="#" id="tablinktext2" class="link-tab inactive" data-tabid="slide-text2" slideNumber="3"
+                            role="tab" aria-selected="false" aria-controls="slide-text2">Text 2</a>
                     </li>
                     <li class="flex-fill">
-                        <a href="#" id="tablinktext3" class="link-tab inactive" data-tabid="slide-text3"
-                            slideNumber="4">Text 3</a>
+                        <a href="#" id="tablinktext3" class="link-tab inactive" data-tabid="slide-text3" slideNumber="4"
+                            role="tab" aria-selected="false" aria-controls="slide-text3">Text 3</a>
                     </li>
                     <li class="flex-fill">
-                        <a href="#" id="tablinktext4" class="link-tab inactive" data-tabid="slide-text4"
-                            slideNumber="5">Text 4</a>
+                        <a href="#" id="tablinktext4" class="link-tab inactive" data-tabid="slide-text4" slideNumber="5"
+                            role="tab" aria-selected="false" aria-controls="slide-text4">Text 4</a>
                     </li>
                     <li class="flex-fill">
-                        <a href="#" id="tablinktext5" class="link-tab inactive" data-tabid="slide-text5"
-                            slideNumber="6">Text 5</a>
+                        <a href="#" id="tablinktext5" class="link-tab inactive" data-tabid="slide-text5" slideNumber="6"
+                            role="tab" aria-selected="false" aria-controls="slide-text5">Text 5</a>
                     </li>
                     <li class="flex-fill">
                         <a href="#" id="tablinklast" class="link-tab inactive" data-tabid="slide-after-reading"
-                            slideNumber="7">Wrap It Up</a>
+                            slideNumber="7" role="tab" aria-selected="false" aria-controls="slide-after-reading">Wrap It
+                            Up</a>
                     </li>
                 </ul>
             </nav>
@@ -71,14 +72,22 @@
             <div class="left-side-bar annim2">
                 <div class="side-nav">
                     <div class="side-nav-circle"></div>
-                    <ul>
-                        <li><a refid="scrollTop_s1_1" href="#scrollTop_s1_1">In This Text Set</a></li>
-                        <li><a refid="scrollTop_s1_2" href="#scrollTop_s1_2">Standards</a></li>
-                        <li><a refid="scrollTop_s1_3" href="#scrollTop_s1_3">Big Question</a></li>
-                        <li><a refid="scrollTop_s1_4" href="#scrollTop_s1_4">Hooks</a></li>
-                        <li><a refid="scrollTop_s1_5" href="#scrollTop_s1_5">Discuss the Big Question</a></li>
-                        <li><a refid="scrollTop_s1_6" href="#scrollTop_s1_6">Vocabulary Across Texts</a></li>
-                    </ul>
+                    <nav>
+                        <ul role="menu">
+                            <li role="none"><a role="menuitem" refid="scrollTop_s1_1" href="#scrollTop_s1_1">In This
+                                    Text Set</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s1_2"
+                                    href="#scrollTop_s1_2">Standards</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s1_3" href="#scrollTop_s1_3">Big
+                                    Question</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s1_4" href="#scrollTop_s1_4">Hooks</a>
+                            </li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s1_5" href="#scrollTop_s1_5">Discuss the
+                                    Big Question</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s1_6" href="#scrollTop_s1_6">Vocabulary
+                                    Across Texts</a></li>
+                        </ul>
+                    </nav>
                 </div>
                 <div class="side-disclamer">
                     <p class="bold">Disclaimer</p>
@@ -89,14 +98,14 @@
             </div>
             <div class="content-panel">
                 <div class="title-wrap annim1">
-                    <h1 class="title">Observing the Night Sky</h1>
+                    <h1  class="title">Observing the Night Sky</h1>
                 </div>
                 <div class="card-wrap row">
                     <div class="col">
                         <div class="card annim4-1">
-                            <div class="card-cover-img img1 annim4-11">
+                            <div class="card-cover-img img1 annim4-11" >
                                 <span class="imageText">Text 1</span>
-                                <div class="card-back">
+                                <div id="card-back-In-the-Sky" class="card-back">
                                     <p class="bold">In the Sky</p>
                                     <p class="normal">
                                         <span class="bold">Word Count: </span><span>416</span><br>
@@ -120,9 +129,9 @@
                     </div>
                     <div class="col">
                         <div class="card annim4-2">
-                            <div class="card-cover-img img2 annim4-22">
+                            <div class="card-cover-img img2 annim4-22" >
                                 <span class="imageText">Text 2</span>
-                                <div class="card-back">
+                                <div id="card-back-Star-Pictures" class="card-back">
                                     <p class="bold">Star Pictures</p>
                                     <p class="normal">
                                         <span class="bold">Word Count:</span><span>43</span><br>
@@ -145,10 +154,11 @@
                     </div>
                     <div class="col">
                         <div class="card annim4-3">
-                            <div class="card-cover-img img3 annim4-33">
+                            <div class="card-cover-img img3 annim4-33" >
                                 <span class="imageText">Text 3</span>
-                                <span class="imageicon" style="z-index: 999;"><i class="fa fa-play-circle" style="font-size: 24px;"></i></span>
-                                <div class="card-back">
+                                <span class="imageicon" style="z-index: 999;"><i class="fa fa-play-circle"
+                                        style="font-size: 24px;"></i></span>
+                                <div id="card-back-Observing-Moon-Phases" class="card-back">
                                     <p class="bold">Observing Moon Phases</p>
                                     <p class="normal">
                                         <span class="bold">Length: </span><span>2 minutes</span><br>
@@ -161,7 +171,8 @@
                                         This <span class="bold">video</span> demonstrates how to draw the phases of the
                                         Moon.
                                     </p>
-                                    <span class="imageicon" style="z-index: 999;"><i class="fa fa-play-circle" style="font-size: 24px;"></i></span>
+                                    <span class="imageicon" style="z-index: 999;"><i class="fa fa-play-circle"
+                                            style="font-size: 24px;"></i></span>
                                 </div>
                             </div>
                             <div class="card-body annim4-333">
@@ -172,9 +183,9 @@
                     </div>
                     <div class="col">
                         <div class="card annim4-4">
-                            <div class="card-cover-img img4 annim4-44">
+                            <div class="card-cover-img img4 annim4-44" >
                                 <span class="imageText">Text 4</span>
-                                <div class="card-back">
+                                <div id="card-back-Name-the-Full-Moons" class="card-back">
                                     <p class="bold">Name the Full Moons</p>
                                     <p class="normal">
                                         <span class="bold">Word Count: </span><span>432&nbsp;</span><br>
@@ -198,9 +209,9 @@
                     </div>
                     <div class="col">
                         <div class="card annim4-5">
-                            <div class="card-cover-img img5 annim4-55">
+                            <div class="card-cover-img img5 annim4-55" >
                                 <span class="imageText">Text 5</span>
-                                <div class="card-back">
+                                <div id="card-back-Through-a-Telescope" class="card-back">
                                     <p class="bold">Through a Telescope</p>
                                     <p class="normal">
                                         <span class="bold">Word Count: </span><span>99</span><br>
@@ -555,18 +566,25 @@
             <div class="left-side-bar">
                 <div class="side-nav">
                     <div class="side-nav-circle"></div>
-                    <ul>
-                        <li><a refid="scrollTop_s2_1" href="#scrollTop_s2_1">Instructional Focus</a></li>
-                        <li><a refid="scrollTop_s2_2" href="#scrollTop_s2_2">Summary</a></li>
-                        <li><a refid="scrollTop_s2_3" href="#scrollTop_s2_3">Before Reading</a></li>
-                        <li><a refid="scrollTop_s2_4" href="#scrollTop_s2_4">During Reading</a></li>
-                        <li><a refid="scrollTop_s2_5" href="#scrollTop_s2_5">After Reading</a></li>
-                    </ul>
+                    <nav>
+                        <ul role="menu">
+                            <li role="none"><a role="menuitem" refid="scrollTop_s2_1"
+                                    href="#scrollTop_s2_1">Instructional Focus</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s2_2" href="#scrollTop_s2_2">Summary</a>
+                            </li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s2_3" href="#scrollTop_s2_3">Before
+                                    Reading</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s2_4" href="#scrollTop_s2_4">During
+                                    Reading</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s2_5" href="#scrollTop_s2_5">After
+                                    Reading</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
             <div class="content-panel">
                 <div class="title-wrap">
-                    <h1 class="title">In the Sky</h1>
+                    <h1 id="titleinthesky" class="title">In the Sky</h1>
                     <div class="title-bottom-text">
                         by Tanner Matthau <br>Informational Text - Word Count: 416 Lexile: L460
                     </div>
@@ -635,7 +653,7 @@
                         bold heading <span class="bold">What Is a Star?</span> Ask: <span class="blue_scripting">What
                             does this heading tell you about what you are about to read?</span> Guide students to
                         understand that the head tells them they will read a description of what a star is.</p>
-                    <p><span class="bold">Track the Texts:</span> Have students use the <a href="#">Observing the Night
+                    <p><span class="bold">Track the Texts:</span> Have students use the <a href="javascript:void(0);">Observing the Night
                             Sky: Track the Texts</a> graphic organizer. As they read, have them fill in the <i><span
                                 class="bold">In the Sky</span></i> column with the name of the text structure, and any
                         text features they noticed, including bold section headings.</p>
@@ -660,7 +678,7 @@
                             from reading <i>In the Sky</i>?</li>
                     </ul>
                     <p><span class="bold">Track the Texts:</span> After the discussion, have students return to the <a
-                            href="#">Observing the Night Sky: Track the Texts</a> graphic organizer. In the <i><span
+                        href="javascript:void(0);">Observing the Night Sky: Track the Texts</a> graphic organizer. In the <i><span
                                 class="bold">In the Sky</span></i> column, have them fill in the <span class="bold">Big
                             Ideas</span> row with something they learned about what they see in the sky.</p>
                     <p><span class="bold">Discuss The Big Question</span></p>
@@ -687,12 +705,17 @@
             <div class="left-side-bar">
                 <div class="side-nav">
                     <div class="side-nav-circle"></div>
-                    <ul>
-                        <li><a refid="scrollTop_s3_1" href="#scrollTop_s3_1">Instructional Focus</a></li>
-                        <li><a refid="scrollTop_s3_2" href="#scrollTop_s3_2">Summary</a></li>
-                        <li><a refid="scrollTop_s3_3" href="#scrollTop_s3_3">Before Reading</a></li>
-                        <li><a refid="scrollTop_s3_4" href="#scrollTop_s3_4">During Reading</a></li>
-                        <li><a refid="scrollTop_s3_5" href="#scrollTop_s3_5">After Reading</a></li>
+                    <ul role="menu">
+                        <li role="none"><a role="menuitem" refid="scrollTop_s3_1" href="#scrollTop_s3_1">Instructional
+                                Focus</a></li>
+                        <li role="none"><a role="menuitem" refid="scrollTop_s3_2" href="#scrollTop_s3_2">Summary</a>
+                        </li>
+                        <li role="none"><a role="menuitem" refid="scrollTop_s3_3" href="#scrollTop_s3_3">Before
+                                Reading</a></li>
+                        <li role="none"><a role="menuitem" refid="scrollTop_s3_4" href="#scrollTop_s3_4">During
+                                Reading</a></li>
+                        <li role="none"><a role="menuitem" refid="scrollTop_s3_5" href="#scrollTop_s3_5">After
+                                Reading</a></li>
                     </ul>
                 </div>
             </div>
@@ -755,7 +778,7 @@
                         Ask: <span class="blue_scripting">What does this first picture show? How is it the same as the
                             next picture? How is it different? How do these pictures help you understand how people see
                             shapes in the stars?</span></p>
-                    <p><span class="bold">Track the Texts:</span> Have students use the <a href="#">Observing the Night
+                    <p><span class="bold">Track the Texts:</span> Have students use the <a href="javascript:void(0);">Observing the Night
                             Sky: Track the Texts</a> Track the Texts graphic organizer. As they read, have them fill in
                         the <i><span class="bold">Star Pictures</span></i> column with the name of the structure, and
                         any features they noticed, including pictures.</p>
@@ -780,7 +803,7 @@
                             have after reading <i>In the Sky</i> that were answered by <i>Star Pictures</i>?</li>
                     </ul>
                     <p><span class="bold">Track the Texts:</span> After the discussion, have students return to the <a
-                            href="#">Observing the Night Sky: Track the Texts</a> graphic organizer. In the <i><span
+                        href="javascript:void(0);">Observing the Night Sky: Track the Texts</a> graphic organizer. In the <i><span
                                 class="bold">Star Pictures</span></i> column, have them fill in the <span
                             class="bold">Big Ideas</span> row with something they learned about stars.</p>
                     <p><span class="bold">Discuss The Big Question</span></p>
@@ -807,13 +830,20 @@
             <div class="left-side-bar">
                 <div class="side-nav">
                     <div class="side-nav-circle"></div>
-                    <ul>
-                        <li><a refid="scrollTop_s4_1" href="#scrollTop_s4_1">Instructional Focus</a></li>
-                        <li><a refid="scrollTop_s4_2" href="#scrollTop_s4_2">Summary</a></li>
-                        <li><a refid="scrollTop_s4_3" href="#scrollTop_s4_3">Before Viewing</a></li>
-                        <li><a refid="scrollTop_s4_4" href="#scrollTop_s4_4">During Viewing</a></li>
-                        <li><a refid="scrollTop_s4_5" href="#scrollTop_s4_5">After Viewing</a></li>
-                    </ul>
+                    <nav>
+                        <ul role="menu">
+                            <li role="none"><a role="menuitem" refid="scrollTop_s4_1"
+                                    href="#scrollTop_s4_1">Instructional Focus</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s4_2" href="#scrollTop_s4_2">Summary</a>
+                            </li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s4_3" href="#scrollTop_s4_3">Before
+                                    Viewing</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s4_4" href="#scrollTop_s4_4">During
+                                    Viewing</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s4_5" href="#scrollTop_s4_5">After
+                                    Viewing</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
             <div class="content-panel">
@@ -880,7 +910,7 @@
                             understand the pattern of the moon phases? How is a full moon like a gibbous moon? How are
                             they different?</span>
                     </p>
-                    <p><span class="bold">Track the Texts:</span> Have students use the <a href="#">Observing the Night
+                    <p><span class="bold">Track the Texts:</span> Have students use the <a href="javascript:void(0);">Observing the Night
                             Sky: Track the Texts</a> graphic organizer. As they watch the video, have them fill in the
                         <i><span class="bold">Observing Moon Phases</span></i> column with the name of the structure,
                         and any features they noticed, including drawings
@@ -906,7 +936,7 @@
                             about the moon from watching <i>Observing Moon Phases</i>?</li>
                     </ul>
                     <p><span class="bold">Track the Texts:</span> After the discussion, have students return to the <a
-                            href="#">Observing the Night Sky: Track the Texts</a> graphic organizer. In the <i><span
+                        href="javascript:void(0);">Observing the Night Sky: Track the Texts</a> graphic organizer. In the <i><span
                                 class="bold">Observing Moon Phases</span></i> column, have them fill in the <span
                             class="bold">Big Ideas</span> row with something they learned about the moon’s phases.</p>
                     <p><span class="bold">Discuss The Big Question</span></p>
@@ -933,13 +963,20 @@
             <div class="left-side-bar">
                 <div class="side-nav">
                     <div class="side-nav-circle"></div>
-                    <ul>
-                        <li><a refid="scrollTop_s5_1" href="#scrollTop_s5_1">Instructional Focus</a></li>
-                        <li><a refid="scrollTop_s5_2" href="#scrollTop_s5_2">Summary</a></li>
-                        <li><a refid="scrollTop_s5_3" href="#scrollTop_s5_3">Before Reading</a></li>
-                        <li><a refid="scrollTop_s5_4" href="#scrollTop_s5_4">During Reading</a></li>
-                        <li><a refid="scrollTop_s5_5" href="#scrollTop_s5_5">After Reading</a></li>
-                    </ul>
+                    <nav>
+                        <ul role="menu">
+                            <li role="none"><a role="menuitem" refid="scrollTop_s5_1"
+                                    href="#scrollTop_s5_1">Instructional Focus</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s5_2" href="#scrollTop_s5_2">Summary</a>
+                            </li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s5_3" href="#scrollTop_s5_3">Before
+                                    Reading</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s5_4" href="#scrollTop_s5_4">During
+                                    Reading</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s5_5" href="#scrollTop_s5_5">After
+                                    Reading</a></li>
+                        </ul>
+                    </nav>
                 </div>
                 <div class="side-disclamer">
                     <p class="bold">Disclaimer</p>
@@ -959,7 +996,7 @@
                     <div class="instructional-Panel">
                         <div class="right-image-wrap">
                             <figure class="right-image">
-                                <img src="assets/images/moons.png" alt="moons" style="width:100%">
+                                <img src="assets/images/moons.png" alt="Name the Full Moons" style="width:100%">
                                 <figcaption>
                                     <a class="normlink" href="#" id="linkNameTheFullMoon">Name the Full Moons</a>
                                     <p><a href="#" id="linkStudentTextPreview" class="graylink">Student Text Preview</a>
@@ -1009,7 +1046,7 @@
                     <!-- <p>[a word web with <i>moon</i> in the center, and with <i>full moon, month, phases, sky,</i> and <i>season</i> branching from it]</p> -->
 
                     <div style="text-align: center;">
-                        <img src="assets/images/1.png" style="width: 100%;max-width: 600px;">
+                        <img src="assets/images/1.png" alt="Moon Word Web" style="width: 100%;max-width: 600px;">
                     </div>
 
                     <h2 id="scrollTop_s5_4">During Reading</h2>
@@ -1026,7 +1063,7 @@
                             class="blue_scripting">What does this picture show? How does this picture help you
                             understand why the full moon in March is called the Worm Moon?</span> (Possible response: It
                         shows worms.)</p>
-                    <p><span class="bold">Track the Texts:</span> Have students use the <a href="#">Observing the Night
+                    <p><span class="bold">Track the Texts:</span> Have students use the <a href="javascript:void(0);">Observing the Night
                             Sky: Track the Texts</a> graphic organizer. As they read, have them fill in the <i><span
                                 class="bold">Name the Full Moons</span></i> column with the name of the text structure,
                         and any text features they noticed, including photographs</p>
@@ -1051,7 +1088,7 @@
                             moon from reading <i>Name the Full Moons?</i>?</li>
                     </ul>
                     <p><span class="bold">Track the Texts</span> After the discussion, have students return to the <a
-                            href="#">Observing the Night Sky: Track the Texts</a> graphic organizer. In the <i><span
+                        href="javascript:void(0);">Observing the Night Sky: Track the Texts</a> graphic organizer. In the <i><span
                                 class="bold">Name the Full Moons</span></i> column, have them fill in the <span
                             class="bold">Big Ideas</span> row with something they learned about the moon.</p>
                     <p><span class="bold">Discuss The Big Question</span></p>
@@ -1080,18 +1117,25 @@
             <div class="left-side-bar">
                 <div class="side-nav">
                     <div class="side-nav-circle"></div>
-                    <ul>
-                        <li><a refid="scrollTop_s6_1" href="#scrollTop_s6_1">Instructional Focus</a></li>
-                        <li><a refid="scrollTop_s6_2" href="#scrollTop_s6_2">Summary</a></li>
-                        <li><a refid="scrollTop_s6_3" href="#scrollTop_s6_3">Before Reading</a></li>
-                        <li><a refid="scrollTop_s6_4" href="#scrollTop_s6_4">During Reading</a></li>
-                        <li><a refid="scrollTop_s6_5" href="#scrollTop_s6_5">After Reading</a></li>
-                    </ul>
+                    <nav>
+                        <ul role="menu">
+                            <li role="none"><a role="menuitem" refid="scrollTop_s6_1"
+                                    href="#scrollTop_s6_1">Instructional Focus</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s6_2" href="#scrollTop_s6_2">Summary</a>
+                            </li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s6_3" href="#scrollTop_s6_3">Before
+                                    Reading</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s6_4" href="#scrollTop_s6_4">During
+                                    Reading</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s6_5" href="#scrollTop_s6_5">After
+                                    Reading</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
             <div class="content-panel">
                 <div class="title-wrap">
-                    <h1 class="title">Through a Telescope</h1>
+                    <h1  class="title">Through a Telescope</h1>
                     <div class="title-bottom-text">
                         by Burgess Clevelittle <br>Informational Text - Word Count: 99 Lexile: 330L
                     </div>
@@ -1150,7 +1194,7 @@
                         Ask: <span class="blue_scripting">What does this first picture show? How is it different from
                             the next picture? How does comparing these pictures help you understand the job a telescope
                             does?</span></p>
-                    <p><span class="bold">Track the Texts:</span> Have students use the <a href="#">Observing the Night
+                    <p><span class="bold">Track the Texts:</span> Have students use the <a href="javascript:void(0);">Observing the Night
                             Sky: Track the Texts</a> graphic organizer. As they watch the video, have them fill in the
                         <i><span class="bold">Through the Telescope</span></i> column with the name of the structure,
                         and any features they noticed, including drawings.
@@ -1174,7 +1218,7 @@
                         <li>Think back to what you read about the night sky in In the Sky. What more did you learn about
                             the sky from reading <i>Through a Telescope</i>?</li>
                     </ul>
-                    <p><span class="bold">Track the Texts</span> After the discussion, display the <a href="#">Observing
+                    <p><span class="bold">Track the Texts</span> After the discussion, display the <a href="javascript:void(0);">Observing
                             the Night Sky: Track the Texts</a> graphic organizer.
                         In the <i><span class="bold">Through a Telescope</span></i> column, have them fill in the <span
                             class="bold">Big Ideas</span> row with something they learned about using telescopes to
@@ -1204,13 +1248,18 @@
             <div class="left-side-bar">
                 <div class="side-nav">
                     <div class="side-nav-circle"></div>
-                    <ul>
-                        <li><a refid="scrollTop_s7_1" href="#scrollTop_s7_1">Wrap It Up</a></li>
-                        <li><a refid="scrollTop_s7_2" href="#scrollTop_s7_2">Vocabulary Round-Up</a></li>
-                        <li><a refid="scrollTop_s7_3" href="#scrollTop_s7_3">Discuss The Text Set's Big Question</a>
-                        </li>
-                        <li><a refid="scrollTop_s7_4" href="#scrollTop_s7_4">Culminating Projects</a></li>
-                    </ul>
+                    <nav>
+                        <ul role="menu">
+                            <li role="none"><a role="menuitem" refid="scrollTop_s7_1" href="#scrollTop_s7_1">Wrap It
+                                    Up</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s7_2" href="#scrollTop_s7_2">Vocabulary
+                                    Round-Up</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s7_3" href="#scrollTop_s7_3">Discuss The
+                                    Text Set's Big Question</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s7_4" href="#scrollTop_s7_4">Culminating
+                                    Projects</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
             <div class="content-panel">
@@ -1246,7 +1295,7 @@
                     <button class="blue-button">Activity Support</button>
                     <h2 id="scrollTop_s7_4">Culminating Projects</h2>
                     <p>Have students apply what they’ve learned from the text set to demonstrate and enhance their
-                        understanding. Review the <a href="#">Project Rubric</a> with students, explaining in detail the
+                        understanding. Review the <a href="javascript:void(0);">Project Rubric</a> with students, explaining in detail the
                         expectations for the project.</p>
                     <p><span class="bold">Sky Tour!</span></p>
                     <p>Have students draw a picture of the night sky. Ask them to make sure they include at least three
@@ -1255,7 +1304,7 @@
                         about each thing in the sky? What interesting information from their reading would they share?
                     </p>
                     <p>Students can refer to what they wrote in Write About the Big Question for each text to aid their
-                        thinking and planning. They may also use the <a href="#">Project Template</a> to help them
+                        thinking and planning. They may also use the <a href="javascript:void(0);">Project Template</a> to help them
                         organize and clarify their thinking as they plan their projects. Encourage them to use the
                         vocabulary they’ve learned from the texts in their tours.</p>
                     <p>When they are finished planning their tours, provide students with a variety of settings in which
@@ -1269,16 +1318,17 @@
     <div class="container-fs-popup disclaimer disnone">
         <nav class="topMenuBar1">
             <ul class="menu">
-                <li><a id="close-disclaimer"><img class='bkimg' src='assets/images/exit-icon.png' />Exit</a></li>
+                <li><a id="close-disclaimer"><img class='bkimg' src='assets/images/exit-icon.png'
+                            aria-hidden="true" />Exit</a></li>
             </ul>
             <div class="menutext">Grade 1 Science | Observing the Night Sky</div>
         </nav>
         <div class="row disclaimerRow">
             <div class="col-3 disclaimerConcave">
-                <img class="concave" src="assets/images/4b.png" alt="Placeholder">
+                <img class="concave" src="assets/images/4b.png" alt="Placeholder" aria-hidden="true">
             </div>
             <div class="col-6 disclaimerContent">
-                <h1 class="disclaimerHeader">Disclaimer</h1>
+                <h1  class="disclaimerHeader">Disclaimer</h1>
                 By clicking the highlighted text, you will be leaving the Savvas NOW Program to enter into an
                 external website that may contain content or resources for adults. Savvas does not guarantee, approve or
                 endorse the content, resources or products available at these websites, nor does a link indicate any
@@ -1291,19 +1341,20 @@
             </div>
             <div class="col-3"></div>
         </div>
-        <i id="disclaimerClose" class="far fa-times-circle popup-close-btn" role="button" tabindex="0"></i>
+        <i id="disclaimerClose" class="far fa-times-circle popup-close-btn" aria-label="Close Disclaimer popup" role="button" tabindex="0"></i>
     </div>
 
     <div class="container-fs-popup discussiontip disnone">
         <nav class="topMenuBar1">
             <ul class="menu">
-                <li><a id="close-discussiontip"><img class='bkimg' src='assets/images/exit-icon.png' />Exit</a></li>
+                <li><a id="close-discussiontip"><img class='bkimg' src='assets/images/exit-icon.png'
+                            aria-hidden="true" />Exit</a></li>
             </ul>
             <div class="menutext">Grade 1 Science | Observing the Night Sky</div>
         </nav>
         <div class="row disclaimerRow">
             <div class="col-2 disclaimerConcave">
-                <img class="concave" src="assets/images/4b.png" alt="Placeholder">
+                <img class="concave" src="assets/images/4b.png" alt="Placeholder" aria-hidden="true">
             </div>
             <div class="col-8 discussiontipContent">
                 <h1 class="discussiontipHeader">Discussion Tips</h1>
@@ -1327,35 +1378,42 @@
                 <p>“I respectfully disagree because _________.”</p>
                 <p>For more tips and guidance on classroom discussions, see these helpful resources.</p>
                 <p>Chapin, Suzanne H., O'Connor, Catherine, and Canavan Anderson, Nancy (2009). Talk Moves.
-                    <br><a target="_blank" href="https://www.edutopia.org/sites/default/files/2019-11/Talk_Moves_2_UP.pdf">https://www.edutopia.org/sites/default/files/2019-11/Talk_Moves_2_UP.pdf</a>
+                    <br><a target="_blank"
+                        href="https://www.edutopia.org/sites/default/files/2019-11/Talk_Moves_2_UP.pdf">https://www.edutopia.org/sites/default/files/2019-11/Talk_Moves_2_UP.pdf</a>
                 </p>
-                <p>O’Conner, Cathy (2021). Information and Resources: Discussion and Debate in the Classroom. <br><a target="_blank"
-                        href="https://www.serpinstitute.org/wordgen-elementary/discussion-and-debate">https://www.serpinstitute.org/wordgen-elementary/discussion-and-debate</a></p>
+                <p>O’Conner, Cathy (2021). Information and Resources: Discussion and Debate in the Classroom. <br><a
+                        target="_blank"
+                        href="https://www.serpinstitute.org/wordgen-elementary/discussion-and-debate">https://www.serpinstitute.org/wordgen-elementary/discussion-and-debate</a>
+                </p>
                 <p>Toro, Stephanie (2021). How to Engage More Students in Classroom Discussions. <br><a target="_blank"
-                        href="https://www.edutopia.org/article/how-engage-more-students-classroom-discussions">https://www.edutopia.org/article/how-engage-more-students-classroom-discussions</a> </p>
-                <p>Zwiers, Jeff (2020). Enhancing learning with authentic communication. 
+                        href="https://www.edutopia.org/article/how-engage-more-students-classroom-discussions">https://www.edutopia.org/article/how-engage-more-students-classroom-discussions</a>
+                </p>
+                <p>Zwiers, Jeff (2020). Enhancing learning with authentic communication.
                     <br><a target="_blank" href="Jeffzwiers.org">Jeffzwiers.org</a>
                 </p>
             </div>
             <div class="col-2"></div>
         </div>
-        <i id="discussiontipClose" class="far fa-times-circle popup-close-btn" role="button" tabindex="0"></i>
+        <i id="discussiontipClose" class="far fa-times-circle popup-close-btn" aria-label="Close Discussion Tips popup" role="button" tabindex="0"></i>
     </div>
 
     <div class="container-fs-popup fullmoon disnone">
         <nav class="topMenuBar1">
             <ul class="menu">
-                <li><a id="close-fullmoonimage"><img class='bkimg' src='assets/images/exit-icon.png' />Exit</a></li>
+                <li><a id="close-fullmoonimage"><img class='bkimg' src='assets/images/exit-icon.png'
+                            aria-hidden="true" />Exit</a></li>
             </ul>
             <div class="menutext">Name the Full Moons</div>
         </nav>
         <div class="row popuprow">
             <div class="col popupcol" style="height: 100%;text-align: center;">
-                <img class="popupimage-large" src="assets/images/download1.png" style="height:100%;">
+                <img class="popupimage-large" src="assets/images/download1.png" alt="Name the Full Moons"
+                    style="height:100%;">
             </div>
         </div>
-        <i id="fullmoonClose" class="far fa-times-circle popup-close-btn" role="button" tabindex="0"></i>
+        <i id="fullmoonClose" class="far fa-times-circle popup-close-btn" role="button" aria-label="Close fullmoon popup" tabindex="0"></i>
     </div>
+    <div id="selectedMenuText" class="sr-only">Selected </div>
     <script src="assets/js/utility.js"></script>
     <script src="assets/js/main.js"></script>
 </body>

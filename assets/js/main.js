@@ -34,50 +34,46 @@ $(document).ready(function () {
 });
 
 $(document).on('click', '.link-learmore', function (event) {
-    if (event.type === 'click' || (event.type === 'keydown') && (event.keyCode === 13 || event.keyCode === 32)) {
-        event.preventDefault();
-        $(".container-fs").HideElement();
-        $('.container-fs-popup.disclaimer').ShowElement();
-    }
+    $('.container-fs-popup.disclaimer').ShowElement();
+    $(".disclaimerHeader").focus();
+    $(".container-fs").HideElement();
 });
 
 $(document).on('click', '#disclaimerClose', function (event) {
-    if (event.type === 'click' || (event.type === 'keydown') && (event.keyCode === 13 || event.keyCode === 32)) {
-        event.preventDefault();
-        $(".container-fs").ShowElement();
-        $('.container-fs-popup.disclaimer').HideElement();
-    }
+    $(".container-fs").ShowElement();
+    $('.link-learmore').focus();
+    $('.container-fs-popup.disclaimer').HideElement();
 });
 
 $(document).on('click', '#btn-discussiontip', function (event) {
-    if (event.type === 'click' || (event.type === 'keydown') && (event.keyCode === 13 || event.keyCode === 32)) {
-        event.preventDefault();
-        $(".container-fs").HideElement();
-        $('.container-fs-popup.discussiontip').ShowElement();
-    }
+    $('.container-fs-popup.discussiontip').ShowElement();
+    $(".discussiontipHeader").focus();
+    $(".container-fs").HideElement();
 });
 
 $(document).on('click', '#discussiontipClose', function (event) {
-    if (event.type === 'click' || (event.type === 'keydown') && (event.keyCode === 13 || event.keyCode === 32)) {
-        event.preventDefault();
         $(".container-fs").ShowElement();
+        $("#btn-discussiontip").focus();
         $('.container-fs-popup.discussiontip').HideElement();
-    }
 });
 $(document).on("click", "#close-discussiontip", function(event){
     $(".container-fs").ShowElement();
+    $("#btn-discussiontip").focus();
     $('.container-fs-popup.discussiontip').HideElement();
 })
 
 $(document).on("click", '.link-tab', function(event){
-    //debugger;
     if(!$(this).hasClass("active")){
         var dataid = $(this).attr("data-tabid");
-        $(".link-tab.active").removeClass("active")
-        $(this).addClass("active")
-        $(".container-fs.slide").InactiveTabs();
+        $(".link-tab.active").removeClass("active").attr("aria-selected","false")
+        $(this).addClass("active").attr("aria-selected","true")
+        $("#" + dataid).find(".side-nav li a").removeClass("active").attr("aria-current", "false").removeAttr("aria-describedby");
         $("#" + dataid).ActiveTabs();
-        $(".side-nav li a").removeClass("active");
+        //$("#" + dataid).find(".title-wrap .title").get(0).focus()
+        //alert($("#" + dataid).find(".title-wrap .title").text())
+        $(".container-fs.slide:not(#" + dataid +")").InactiveTabs();
+        //$(".title-wrap .title:first").get(0).focus()
+        $("#" + dataid).find(".side-nav li a:first").focus();
     }
 });
 
@@ -91,16 +87,25 @@ $(document).on("click", ".card-body .card-link", function(event){
     $("#" + tablinkid).trigger( "click" );
 })
 $(document).on("click", "#linkNameTheFullMoon,#linkStudentTextPreview", function(event){
-    $(".container-fs").HideElement();
     $('.container-fs-popup.fullmoon').ShowElement();
+    $("#fullmoonClose").focus();
+    $(".container-fs").HideElement();
 })
 
 $(document).on("click", "#close-fullmoonimage", function(event){
     $(".container-fs").ShowElement();
+    $("#linkNameTheFullMoon").focus();
     $('.container-fs-popup.fullmoon').HideElement();
 })
 $(document).on("click", "#fullmoonClose", function(event){
     $(".container-fs").ShowElement();
+    $("#linkNameTheFullMoon").focus();
     $('.container-fs-popup.fullmoon').HideElement();
 })
+
+$(document).on('keypress', '#fullmoonClose, #close-fullmoonimage, #close-discussiontip, #discussiontipClose, #disclaimerClose', function (event) {
+    if(event.which == 13 || event.which == 32) {
+        $(this).click();
+    }
+});
 
