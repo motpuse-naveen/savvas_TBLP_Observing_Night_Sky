@@ -376,6 +376,10 @@ body, html {
     display: block;
 }
 
+.card-button.showback .card-back {
+    display: block;
+}
+
 .card-cover-img:hover .imageText {
     display: none;
 }
@@ -613,6 +617,7 @@ a.graylink{
     width: 100%;
     max-width: 1024px;
 }
+
 /*Annimation*/
 .annim1{
     animation: floatText 2s normal;
