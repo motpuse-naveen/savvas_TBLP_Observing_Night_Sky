@@ -107,23 +107,20 @@ $(document).on('keypress', '#fullmoonClose, #close-fullmoonimage, #close-discuss
 });
 
 $(document).on("click", ".card-button", function (event) {
-
+    var backVisible = $(this).hasClass("showback")
+    if (backVisible) {
+        $(this).removeClass("showback").attr("aria-expanded", "false")
+        $("#livecontent").text("")
+    }
+    else {
+        $(this).addClass("showback").attr("aria-expanded", "true")
+        $("#livecontent").text($(this).find(".card-back").text());
+    }   
 });
 
-$(document).on('keypress', ".card-button", function (event) {
+$(document).on('keyup', ".card-button", function (event) {
     if (event.which == 13 || event.which == 32) {
-        //$(this).click();
-        var backVisible = $(this).hasClass("showback")
-        if (backVisible) {
-            $(this).removeClass("showback").attr("aria-expanded", "false")
-            $("#livecontent").text("")
-        }
-        else {
-            $(this).addClass("showback").attr("aria-expanded", "true")
-            $("#livecontent").text($(this).find(".card-back").text());
-        }
-        event.preventDefault();
-        event.stopPropagation();
+        $(this).click();
     }
 });
 
