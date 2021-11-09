@@ -480,6 +480,9 @@ h3.blue-heading .playicon {
 .uppercase {
     text-transform: uppercase;
   }
+.solidl{
+    letter-spacing: -3px;
+}
 ul.small-bullet {
     margin-left: 30px;
 }
