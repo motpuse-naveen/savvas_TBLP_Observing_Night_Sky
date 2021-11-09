@@ -124,3 +124,34 @@ $(document).on('keyup', ".card-button", function (event) {
     }
 });
 
+$(document).on('click', 'button.activitySupport, a.activitySupport', function (event) {
+    event.preventDefault();
+    debugger
+    var popupref = $(this).attr("popupref")
+    $('.container-fs-popup.' + popupref).ShowElement();
+    var ashlength = $('.container-fs-popup.' + popupref).find(".activitySupportHeading").length;
+    if(ashlength>0){
+        $('.container-fs-popup.' + popupref).find(".activitySupportHeading").focus();
+    }
+    else{
+        if($('.container-fs-popup.' + popupref).find(".activityLeft-title").length>0){
+            $('.container-fs-popup.' + popupref).find(".activityLeft-title").focus();
+        }
+        else{
+            $('.container-fs-popup.' + popupref).find(".activityLeft-title1").focus();
+        }
+    }
+    $(".container-fs").HideElement();
+    lastFocusedElement = $(this);
+    event.preventDefault();
+	event.stopPropagation();
+});
+
+$(document).on('click', '.ac-popup-close-btn', function (event) {
+    $(".container-fs").ShowElement();
+    lastFocusedElement.focus();
+    $(this).closest(".container-fs-popup").HideElement();
+    event.preventDefault();
+	event.stopPropagation();
+});
+
