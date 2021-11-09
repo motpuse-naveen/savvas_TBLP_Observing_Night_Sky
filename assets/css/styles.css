@@ -477,7 +477,9 @@ h3.blue-heading .playicon {
     background-color: #efefef;
     margin-bottom: 10px;
 }
-
+.uppercase {
+    text-transform: uppercase;
+  }
 ul.small-bullet {
     margin-left: 30px;
 }
