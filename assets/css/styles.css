@@ -295,7 +295,7 @@ body, html {
     -moz-box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.6);
 }
 
-.card-body {
+.card-body-thumb {
     text-align: center;
     padding: 10px 0px;
     height: 70px;
@@ -303,14 +303,14 @@ body, html {
     overflow: hidden;
 }
 
-.card-body a.card-text {
+.card-body-thumb a.card-text {
     font-family: 'poppins-semibold';
     color: #0072EE;
     font-size: 18px;
     text-decoration: underline;
 }
 
-.card-body p.card-text {
+.card-body-thumb p.card-text {
     font-family: 'poppins-light';
     font-size: 15px;
 }
@@ -407,7 +407,7 @@ body, html {
     max-width: 100%;
 }
 
-.popup-close-btn {
+.popup-close-btn,.ac-popup-close-btn {
     position: absolute;
     font-size: 32px;
     right: 15px;
@@ -761,6 +761,10 @@ a.graylink{
     background-color: #FFFFFF;
     padding-top: 30px;
 }
+.leftalig-nmt0 {
+    margin-top: 0;
+    text-align: left;
+}
 
 /*Annimation*/
 .annim1{
@@ -876,6 +880,18 @@ a.graylink{
     right: 10px;
     top: 177px;
     color: white;
+}
+
+.card-body.img-card{
+    padding: 0;
+    text-align: center;
+}
+.card-body.img-card img{
+    height: 160px;
+}
+
+.card.b0{
+    border: 0px;
 }
 
 @-webkit-keyframes floatText{
