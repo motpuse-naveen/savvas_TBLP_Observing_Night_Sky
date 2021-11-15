@@ -30,6 +30,10 @@ $(document).ready(function () {
         $(".annim4-333").removeClass("annim4-333")
         $(".annim4-444").removeClass("annim4-444")
         $(".annim4-555").removeClass("annim4-555")
+        $(".white-bg").removeClass("white-bg")
+        $(".annim-fade").removeClass("annim-fade")
+        $("body.black").removeClass("black")
+         
     }, 3000)
 });
 
