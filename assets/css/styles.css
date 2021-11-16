@@ -712,39 +712,31 @@ a.graylink{
     padding: 30px;
     border: 1px solid #000000;
 }
-.leftalig-nmt0{
-    margin-top: 0;
-    text-align: left;
-}
-.activitySupportContent{
-    font-family: 'poppins-light';
-    font-size: 16px;
-    overflow: auto;
-    height: 100%;
-    padding-right: 100px;
-    margin-top: 2rem;
-}
-.projectTemplateContent{
-    font-family: 'poppins-light';
-    font-size: 16px;
-    overflow: auto;
-    left: 50px;    
-    height: 100%;
-}
-.activitySupportHeading {
-    font-family: 'poppins-semibold';
-    margin-bottom: 1rem;
-}
 
-.actbtnFixed{
-    position: fixed;
-    left: 30px;
-    top: 350px;
-}
-.activitySupportRow {
+.popup-main-row{
     height: 100%;
+    margin: 0px;
 }
-.activityLeft-title{
+.popup-concave-col{
+    height: 100%;
+    background: url('../images/4b.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.popup-content-col{
+    font-family: 'poppins-light';
+    font-size: 16px;
+    overflow: auto;
+    height: 100%;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+.popup-content-col .row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.popup-left-title{
     font-family: 'poppins-semibold';
     color: #597CBE91;
     font-size: 66px;
@@ -752,25 +744,15 @@ a.graylink{
     margin-top: 6rem;
     text-align: center;
 }
-.about-author-slider{
-    position: absolute;
-    top:0px;
-    right: 0px;
-    z-index: 99;
-    width: 100%;
-    height: 100%;
+.popup-content-title{
+    font-family: 'poppins-semibold';
+    margin-bottom: 1rem;
 }
-.aa-slider-container{
-    margin-left: 10%;
-    width: 90%;
-    background-color: #FFFFFF;
-    padding-top: 30px;
-}
-.leftalig-nmt0 {
+
+.leftalig-nmt0{
     margin-top: 0;
     text-align: left;
 }
-
 /*Annimation*/
 .annim1{
     animation: floatText 2s normal;

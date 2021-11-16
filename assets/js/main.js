@@ -11,6 +11,7 @@ $(document).ready(function () {
         $('body').removeClass('show-focus-outlines');
     });
     setTimeout(function () {
+        $(".annimmenu").removeClass("annimmenu")
         $(".annim1").removeClass("annim1")
         $(".annim2").removeClass("annim2")
         $(".annim3").removeClass("annim3")
@@ -39,7 +40,7 @@ $(document).ready(function () {
 
 $(document).on('click', '.link-learmore', function (event) {
     $('.container-fs-popup.disclaimer').ShowElement();
-    $(".disclaimerHeader").focus();
+    $('.container-fs-popup.disclaimer .popup-content-title').focus();
     $(".container-fs").HideElement();
 });
 
@@ -51,7 +52,7 @@ $(document).on('click', '#disclaimerClose', function (event) {
 
 $(document).on('click', '#btn-discussiontip', function (event) {
     $('.container-fs-popup.discussiontip').ShowElement();
-    $(".discussiontipHeader").focus();
+    $('.container-fs-popup.discussiontip .popup-content-title').focus();
     $(".container-fs").HideElement();
 });
 
@@ -133,16 +134,16 @@ $(document).on('click', 'button.activitySupport, a.activitySupport', function (e
     debugger
     var popupref = $(this).attr("popupref")
     $('.container-fs-popup.' + popupref).ShowElement();
-    var ashlength = $('.container-fs-popup.' + popupref).find(".activitySupportHeading").length;
+    var ashlength = $('.container-fs-popup.' + popupref).find(".popup-left-title").length;
     if(ashlength>0){
-        $('.container-fs-popup.' + popupref).find(".activitySupportHeading").focus();
+        $('.container-fs-popup.' + popupref).find(".popup-left-title").focus();
     }
     else{
-        if($('.container-fs-popup.' + popupref).find(".activityLeft-title").length>0){
-            $('.container-fs-popup.' + popupref).find(".activityLeft-title").focus();
+        if($('.container-fs-popup.' + popupref).find(".popup-content-title").length>0){
+            $('.container-fs-popup.' + popupref).find(".popup-content-title").focus();
         }
         else{
-            $('.container-fs-popup.' + popupref).find(".activityLeft-title1").focus();
+            $('.container-fs-popup.' + popupref).find(".popup-close-btn").focus();
         }
     }
     $(".container-fs").HideElement();

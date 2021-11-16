@@ -1,4 +1,9 @@
 
+@media (max-width:1240px) {
+    .popup-left-title{
+        font-size: 44px;
+    }
+}
 @media (max-width: 990px) {
     .left-side-bar{
         display: none;
@@ -8,6 +13,10 @@
     }
     .card-wrap .card{
         margin-right: auto;
+    }
+    .popup-content-col .col-md-12 .popup-left-title{
+        margin-top: 0;
+        text-align: left;
     }
 }
 
