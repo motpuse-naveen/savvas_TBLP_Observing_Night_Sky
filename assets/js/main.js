@@ -34,7 +34,8 @@ $(document).ready(function () {
         $(".white-bg").removeClass("white-bg")
         $(".annim-fade").removeClass("annim-fade")
         $("body.black").removeClass("black")
-         
+
+        InitCarousel();
     }, 3000)
 });
 
@@ -68,8 +69,26 @@ $(document).on("click", "#close-discussiontip", function (event) {
 })
 
 $(document).on("click", '.link-tab', function (event) {
+    var ismobileview = $(this).closest(".top-mobile-menu-button").length > 0 ? true : false;
+    if (ismobileview) {
+        $(".mobile-menu").HideElement();
+    }
+    $(".sub-menu li.active").removeClass("active");
+    $("li.top-menu-item.active").removeClass("active")
+    $(this).closest("li.top-menu-item").addClass("active")
     if (!$(this).hasClass("active")) {
         var dataid = $(this).attr("data-tabid");
+        if (dataid == "slide-before-reading") {
+            $(".top-mobile-menu-button").addClass("homescreen")
+            $(".top-mobile-menu-button").find(".nav-title h1").text($(this).text())
+            $(".top-mobile-menu-button").find(".nav-title").HideElement();
+        }
+        else {
+            $(".top-mobile-menu-button").removeClass("homescreen")
+            $(".top-mobile-menu-button").find(".nav-title h1").text($(this).text())
+            $(".top-mobile-menu-button").find(".nav-title").ShowElement();
+        }
+        $(this).closest("li.top-menu-item").addClass("active")
         $(".link-tab.active").removeClass("active").attr("aria-selected", "false")
         $(this).addClass("active").attr("aria-selected", "true")
         $("#" + dataid).find(".side-nav li a").removeClass("active").attr("aria-current", "false").removeAttr("aria-describedby");
@@ -88,7 +107,7 @@ $(document).on("click", ".card-body .card-link", function (event) {
     var tablinkid = $(this).attr("data-tablinkid");
     $("#" + tablinkid).trigger("click");
 })
-$(document).on("click", "#linkNameTheFullMoon,#linkStudentTextPreview", function (event) {
+$(document).on("click", "#linkNameTheFullMoon", function (event) {
     $('.container-fs-popup.fullmoon').ShowElement();
     $("#fullmoonClose").focus();
     $(".container-fs").HideElement();
@@ -120,7 +139,7 @@ $(document).on("click", ".card-button", function (event) {
     else {
         $(this).addClass("showback").attr("aria-expanded", "true")
         $("#livecontent").text($(this).find(".card-back").text());
-    }   
+    }
 });
 
 $(document).on('keyup', ".card-button", function (event) {
@@ -131,25 +150,25 @@ $(document).on('keyup', ".card-button", function (event) {
 
 $(document).on('click', 'button.activitySupport, a.activitySupport', function (event) {
     event.preventDefault();
-    debugger
+    //debugger
     var popupref = $(this).attr("popupref")
     $('.container-fs-popup.' + popupref).ShowElement();
     var ashlength = $('.container-fs-popup.' + popupref).find(".popup-left-title").length;
-    if(ashlength>0){
+    if (ashlength > 0) {
         $('.container-fs-popup.' + popupref).find(".popup-left-title").focus();
     }
-    else{
-        if($('.container-fs-popup.' + popupref).find(".popup-content-title").length>0){
+    else {
+        if ($('.container-fs-popup.' + popupref).find(".popup-content-title").length > 0) {
             $('.container-fs-popup.' + popupref).find(".popup-content-title").focus();
         }
-        else{
+        else {
             $('.container-fs-popup.' + popupref).find(".popup-close-btn").focus();
         }
     }
     $(".container-fs").HideElement();
     lastFocusedElement = $(this);
     event.preventDefault();
-	event.stopPropagation();
+    event.stopPropagation();
 });
 
 $(document).on('click', '.ac-popup-close-btn', function (event) {
@@ -157,6 +176,77 @@ $(document).on('click', '.ac-popup-close-btn', function (event) {
     lastFocusedElement.focus();
     $(this).closest(".container-fs-popup").HideElement();
     event.preventDefault();
-	event.stopPropagation();
+    event.stopPropagation();
+});
+
+$(document).on("click", "#mobileMenuButton", function (event) {
+    $(".mobile-menu").ShowElement();
+    event.preventDefault();
+    event.stopPropagation();
+})
+$(document).on("click", ".mobile-menu-overlay", function (event) {
+    $(".mobile-menu").HideElement();
+    event.preventDefault();
+    event.stopPropagation();
+})
+
+var g_dotCount = 3;
+var g_currDot = 1;
+var g_colWdt = 0;
+var g_iconsToShift = 0;
+
+function InitCarousel() {
+    if ($(".CarouselDots:visible").length > 0) {
+        var colWidth = $(".card-wrap.row .col:first").width();
+        g_colWdt = colWidth;
+        var avalWidth = $(".card-wrap-container").width();
+        var dotCount = avalWidth / colWidth;
+        var displayedIcons = Math.trunc(dotCount);
+        g_iconsToShift = displayedIcons;
+        var totalIcons = 5
+        g_dotCount = Math.ceil(totalIcons / displayedIcons)
+        $(".CarouselDots").empty();
+
+        for (var i = 0; i < g_dotCount; i++) {
+            $(".CarouselDots").append('<span class="dot"></span>');
+        }
+        $(".CarouselDots .dot:first").addClass("active");
+        $("#buttonCarouselPrev").addClass("inactive")
+        $('.card-wrap-container').animate({ scrollLeft: 0 });
+    }
+}
+$(document).on("click", "#buttonCarouselPrev", function (event) {
+    g_currDot--;
+    $(".CarouselDots .dot").removeClass("active");
+    $(".CarouselDots .dot:nth-child(" + g_currDot + ")").addClass("active");
+    var currscroll = $('.card-wrap-container').scrollLeft()
+    $('.card-wrap-container').animate({ scrollLeft: (Number(currscroll) - (g_colWdt * g_iconsToShift)) });
+    if (g_currDot == 1) {
+        $("#buttonCarouselPrev").addClass("inactive")
+        $("#buttonCarouselNext").removeClass("inactive")
+    }
+    else {
+        $("#buttonCarouselPrev").removeClass("inactive")
+        $("#buttonCarouselNext").removeClass("inactive")
+    }
+});
+$(document).on("click", "#buttonCarouselNext", function (event) {
+    g_currDot++;
+    $(".CarouselDots .dot").removeClass("active");
+    $(".CarouselDots .dot:nth-child(" + g_currDot + ")").addClass("active");
+    var currscroll = $('.card-wrap-container').scrollLeft()
+    $('.card-wrap-container').animate({ scrollLeft: (Number(currscroll) + (g_colWdt * g_iconsToShift)) });
+    if (g_currDot == g_dotCount) {
+        $("#buttonCarouselPrev").removeClass("inactive")
+        $("#buttonCarouselNext").addClass("inactive")
+    }
+    else {
+        $("#buttonCarouselPrev").removeClass("inactive")
+        $("#buttonCarouselNext").removeClass("inactive")
+    }
+});
+
+$(window).resize(function () {
+    InitCarousel();
 });
 
