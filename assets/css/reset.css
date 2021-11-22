@@ -366,7 +366,7 @@ textarea {
 }
 
 :root {
-    --focus-gold: -webkit-focus-ring-color;
+    --focus-gold: #0678F4;
   }
   
   :focus-visible  {
