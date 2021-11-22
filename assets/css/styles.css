@@ -18,7 +18,7 @@ ol, ul, dl {
 }
 a{cursor: pointer;}
 a:focus{
-    outline: none;
+    /*outline: none;*/
 }
 
 body, html {
@@ -136,7 +136,7 @@ body, html {
 }
 
 .topMenuBar2 .menu li a:focus {
-    outline: none;
+    /*outline: none;*/
 }
 
 .topMenuBar2 .menu li a:hover, .topMenuBar2 .menu li a.active {
@@ -220,10 +220,10 @@ body, html {
 }
 
 .side-nav ul li a:focus {
-    outline: none;
+    /*outline: none;*/
 }
 
-.side-nav ul li a:hover, .side-nav ul li a.active {
+.side-nav ul li a:hover, .side-nav ul li a.active, .side-nav ul li a:focus {
     color: #030302;
 }
 
@@ -253,7 +253,7 @@ body, html {
 }
 
 .link-learmore:focus {
-    outline: none;
+    /*outline: none;*/
 }
 
 .content-panel {
@@ -282,7 +282,7 @@ body, html {
     margin: 0 5px;
 }
 .card-wrap-container{
-   overflow: auto;
+   overflow: hidden;
    /*position: relative;*/
 }
 .card-wrap.row {
@@ -474,6 +474,15 @@ body, html {
     font-size: 20px;
     color: #0072EE;
     line-height: 28px;
+}
+
+h3.normaltext{
+    font-size: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.mb2{
+    margin-bottom: 2px;
 }
 
 h3.blue-heading a {
@@ -783,7 +792,7 @@ a.graylink{
     height: 30px;
 }
 .top-mobile-menu-button #mobileMenuButton:focus{
-    outline: none;
+    /*outline: none;*/
 }
 .top-mobile-menu-button.homescreen{
     background-color: transparent;
