@@ -379,6 +379,10 @@ textarea {
   button:focus-visible{
     outline: 2px solid var(--focus-gold) !important;
   }
+  .popup-content-scroller a:focus-visible {
+    border: 2px solid var(--focus-gold);
+    outline:none;
+  }
   /*
   button:focus:not(:focus-visible),   a:focus:not(:focus-visible)  {
     outline: 2px solid var(--focus-gold);
