@@ -211,7 +211,7 @@ body, html {
 
 .side-nav ul li a {
     text-decoration: none;
-    color: #03030280;
+    color: #292B17;
     font-weight: 600;
 }
 
@@ -488,6 +488,14 @@ h3.normaltext{
 h3.blue-heading a {
     text-decoration: underline;
 }
+
+a {
+    color: #006BE0;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover{color: #0056b3;}
 
 h3.blue-heading .playicon {
     margin-right: 10px;
