@@ -65,6 +65,9 @@
     .orbit1, .orbit2, .orbit3{display: none;}
     .left-side-bar{display: none;}
     .popup-concave-col{display: none;}
+    .popup-close-btn, .ac-popup-close-btn {
+       right: 0px;
+       }
     .fixed-head-bar {
         position: absolute;
     }
