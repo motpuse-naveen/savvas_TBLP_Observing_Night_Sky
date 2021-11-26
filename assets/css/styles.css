@@ -421,6 +421,8 @@ body, html {
     right: 20px;
     top: 15px;
     cursor: pointer;
+    border-style: none;
+    background: transparent;
 }
 
 .container-fs-popup .topMenuBar1 {
@@ -1069,6 +1071,11 @@ a.graylink{
 }
 .card-body.img-card img{
     height: 160px;
+}
+.popup-close-btn .fa-times-circle, 
+.ac-popup-close-btn .fa-times-circle{
+    color: #000000;
+    display: inherit;
 }
 
 .card.b0{

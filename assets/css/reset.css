@@ -383,6 +383,18 @@ textarea {
     border: 2px solid var(--focus-gold);
     outline:none;
   }
+  .popup-content-scroller h2:focus-visible {
+    border: 2px solid var(--focus-gold);
+    outline:none;
+  }
+  .popup-content-scroller h1:focus-visible {
+    border: 2px solid var(--focus-gold);
+    outline:none;
+  }
+  .popup-content-scroller button:focus-visible {
+    border: 2px solid var(--focus-gold);
+    outline:none;
+  }
   /*
   button:focus:not(:focus-visible),   a:focus:not(:focus-visible)  {
     outline: 2px solid var(--focus-gold);
