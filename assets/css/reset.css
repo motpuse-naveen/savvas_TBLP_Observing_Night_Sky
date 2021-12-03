@@ -366,7 +366,7 @@ textarea {
 }
 
 :root {
-    --focus-gold: #0678F4;
+    --focus-gold: #000000;
   }
   
   :focus-visible  {
