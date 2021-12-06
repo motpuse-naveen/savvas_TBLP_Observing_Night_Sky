@@ -181,7 +181,7 @@ body, html {
 
 .side-nav {
     width: 100%;
-    height: 290px;
+    min-height: 290px;
 }
 
 .side-nav-circle {
@@ -189,7 +189,7 @@ body, html {
     background-color: #919E57;
     border-radius: 50%;
     width: 313px;
-    height: 313px;
+    height: 320px;
     left: -112px;
     top: -27px;
     z-index: -1;
@@ -204,7 +204,7 @@ body, html {
     font-family: 'poppins-regular';
     font-size: 15px;
     color: #03030280;
-    padding: 6px 60px;
+    padding: 6px 35px;
     padding-left: 0px;
     line-height: 1.3em;
 }
@@ -331,7 +331,7 @@ body, html {
 }
 
 .card-cover-img {
-    height: 206px;
+    min-height: 206px;
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
 }
@@ -379,7 +379,7 @@ body, html {
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
     opacity: 0.95;
-    height: 100%;
+    min-height: 206px;
     display: none;
 }
 
@@ -625,7 +625,7 @@ table.table-style2 .trbg {
 .text-content figure.right-image{
     width: 208px;
     margin: 0;
-    margin-top: -156px;
+    margin-top: -115px;
 
 }
 .text-content figure.right-image img{
