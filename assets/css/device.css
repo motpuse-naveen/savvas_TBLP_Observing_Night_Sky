@@ -97,7 +97,7 @@
         height: 165px;
     }
     .content-panel .title-wrap .title{
-        font-size: 32px;
+        font-size: 38px;
     }
     .content-panel .title-wrap .title-bottom-text{
         font-size: 14px;
@@ -135,6 +135,17 @@
     h1.main-heading{
         font-size: 110px;
         line-height:110px;
+    }
+
+    .card-wrap-container{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .card-wrap-container .row.card-wrap .col:first-child{
+        padding-left: 20px;
+    }
+    .card-wrap-container .row.card-wrap .col:last-child{
+        padding-right: 20px;
     }
    
     .container-fs.slide {
@@ -247,7 +258,7 @@
         height: 150px;
     }
     .content-panel .title-wrap .title{
-        font-size: 24px;
+        font-size: 32px;
     }
     .content-panel .title-wrap .title-bottom-text{
         font-size: 12px;
