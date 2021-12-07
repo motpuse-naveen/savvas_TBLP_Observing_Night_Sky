@@ -37,6 +37,9 @@ body, html {
 .container-fs {
     
 }
+.cls-10,.cls-12{
+    font-family: sans-serif;
+}
 
 .container-fs.slide {
     margin-top: 56px;
