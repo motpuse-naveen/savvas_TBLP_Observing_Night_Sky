@@ -141,6 +141,7 @@ $(document).on("click", ".card-button", function (event) {
         $("#livecontent").text("")
     }
     else {
+        $(".showback").removeClass("showback").attr("aria-expanded", "false")
         $(this).addClass("showback").attr("aria-expanded", "true")
         $("#livecontent").text($(this).find(".card-back").text());
     }

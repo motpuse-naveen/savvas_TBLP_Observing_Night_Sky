@@ -765,7 +765,7 @@ a.graylink{
     font-family: 'poppins-semibold';
     color: #486FB1;
     font-size: 66px;
-    line-height: 66px;
+    line-height: 1.5;
     margin-top: 6rem;
     text-align: center;
 }
@@ -910,7 +910,7 @@ a.graylink{
     width: 24px;
     height: 24px;
     border-style: none;
-    z-index: 99;
+    z-index: 90;
     border: 1px solid #000;
     border-radius:50%;
     display: none;
