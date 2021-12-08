@@ -131,7 +131,7 @@
     }
 
     .content-panel .title-wrap .title-bottom-text {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .content-panel .text-content h2:first-child {
@@ -362,6 +362,39 @@
 
     .banner-bg {
         height: 364px;
+    }
+}
+@media (max-width: 381px) {
+    .banner-bg-small{
+        height: 225px;
+    }
+    .content-panel .title-wrap .title-bottom-text {
+        font-size: 12px;
+    }
+    .slide-text1 .content-panel .text-content {
+        padding-top: 35px;
+    }
+
+    .slide-text2 .content-panel .text-content {
+        padding-top: 35px;
+    }
+
+    .slide-text3 .content-panel .text-content {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    .slide-text4 .content-panel .text-content {
+        padding-top: 30px;
+    }
+
+    .slide-text5 .content-panel .text-content {
+        padding-top: 35px;
+    }
+
+    .slide-after-reading .content-panel .text-content {
+        padding-top: 0px;
+        margin-top: 0px;
     }
 }
 @media (max-width: 378px) {

@@ -1,6 +1,7 @@
 $(document).ready(function () {
     //addAccessibilityRolesAndTab();
     //setTabIndex();
+    //alert( 'Your screen resolution is ' + screen.width + 'x' + screen.height );
     document.addEventListener('keydown', function (e) {
         var code = e.keyCode ? e.keyCode : e.which;
         if (e.keyCode === 9) {
@@ -37,6 +38,7 @@ $(document).ready(function () {
         $(".annim4-555").removeClass("annim4-555")
         
         $(".annim-fade").removeClass("annim-fade")
+        $(".card-cover-img").removeClass("FixHeight").addClass("MinHeight")
         
 
         InitCarousel();
