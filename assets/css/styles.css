@@ -345,31 +345,31 @@ body, html {
 }
 
 .card-cover-img.img1 {
-    background: url(../images/img1.jpg);
+    background: url(../images/TextSet_G1_01@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .card-cover-img.img2 {
-    background: url(../images/img2.jpg);
+    background: url(../images/TextSet_G1_02@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .card-cover-img.img3 {
-    background: url(../images/img3.jpg);
+    background: url(../images/TextSet_G1_03@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .card-cover-img.img4 {
-    background: url(../images/img4.jpg);
+    background: url(../images/TextSet_G1_04@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .card-cover-img.img5 {
-    background: url(../images/img5.jpg);
+    background: url(../images/TextSet_G1_05REV@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -535,7 +535,7 @@ ul.small-bullet {
 
 ul.small-bullet li {
     list-style-type: disc;
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
 
 table.table-style1 {
@@ -1086,7 +1086,18 @@ a.graylink{
     color: #000000;
     display: inherit;
 }
-
+ul.numberlist li{margin:10px 0;}
+ul.numberlist li:before {
+   content: "\200B";
+ }
+.cardmarginTop{
+    position: relative;
+    margin-top: 206px;
+}
+.cardtextheight{
+    position: relative;
+    height: 0;
+}
 .card.b0{
     border: 0px;
 }

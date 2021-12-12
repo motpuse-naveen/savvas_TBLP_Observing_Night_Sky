@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="756.48" height="509.28" id="svgcontent" x="378.24" y="254.64" viewBox="0 0 756.48 509.28">
+    <defs style="pointer-events: none" opacity="0.33">
+        <clipPath transform="translate(-21.6 -51.84)" id="clip-path">
+            <rect id="svg_1" fill="none" height="176.81" width="129.88" y="171.05" x="260.17" class="cls-1"/>
+        </clipPath>
+        <clipPath transform="translate(-21.6 -51.84)" id="clip-path-2">
+            <rect id="svg_2" fill="none" height="176.81" width="129.88" y="72.05000000000001" x="577.06" class="cls-1"/>
+        </clipPath>
+    </defs>
+    <g style="pointer-events:all">
+        <title style="pointer-events: none" opacity="0.33">Layer 1</title>
+        <g id="svg_3" isolation="isolate" class="cls-2">
+            <g data-name="Layer 1" id="Layer_1">
+                <rect id="svg_4" fill="#fff" rx="18.08" height="471.92" width="719.21" y="13.72" x="13.68" class="cls-4"/>
+                <rect id="svg_5" stroke-miterlimit="10" stroke="#231f20" fill="none" rx="18.08" height="471.92" width="719.21" y="13.72" x="13.68" class="cls-5"/>
+                <line id="svg_6" stroke-width="3px" stroke-miterlimit="10" stroke="#231f20" fill="none" y2="356.64" x2="367.4" y1="227.68" x1="367.4" class="cls-6"/>
+                <line id="svg_7" stroke-width="3px" stroke-miterlimit="10" stroke="#231f20" fill="none" y2="262.7" x2="243.27" y1="195.68" x1="371.4" class="cls-6" transform="rotate(26.2757 307.335 229.19)"/>
+                <line id="svg_8" stroke-width="3px" stroke-miterlimit="10" stroke="#231f20" fill="none" y2="118.27" x2="309.99" y1="225.68" x1="417.4" class="cls-6" transform="rotate(43.8994 363.695 171.975)"/>
+                <ellipse id="svg_19" stroke-width="2px" stroke-miterlimit="10" stroke="#231f20" fill="#fff" ry="50.79" rx="96.34" cy="87.07" cx="365.09" class="cls-11"/>
+                <text id="svg_20" x="310.06" y="95.79" letter-spacing="0.01em" font-weight="600" font-family="sans-serif" fill="#231f20" font-size="26px" class="cls-10">full moon</text>
+                <ellipse id="svg_23" stroke-width="2px" stroke-miterlimit="10" stroke="#231f20" fill="#fff" ry="50.79" rx="96.34" cy="228.67000000000002" cx="151.25" class="cls-11"/>
+                <text id="svg_24" x="91.04" y="237.39999" letter-spacing="0.01em" font-weight="600" font-family="sans-serif" fill="#231f20" font-size="26px" class="cls-12">new moon</text>
+                <ellipse id="svg_25" stroke-width="2px" stroke-miterlimit="10" stroke="#231f20" fill="#fff" ry="50.79" rx="96.34" cy="375.18" cx="366.19" class="cls-11"/>
+                <text id="svg_26" x="315.01999" y="381.91" letter-spacing="0.01em" font-weight="600" font-family="sans-serif" fill="#231f20" font-size="26px" class="cls-10">crescent</text>
+                <line id="svg_9" stroke-width="3px" stroke-miterlimit="10" stroke="#231f20" fill="none" y2="256.7" x2="413.27" y1="189.68" x1="541.4" class="cls-6" transform="rotate(26.2757 477.335 223.19)"/>
+                <ellipse id="svg_15" stroke-width="5px" stroke-miterlimit="10" stroke="#231f20" fill="#fff" ry="66.46" rx="88.18" cy="232.16" cx="365.51" class="cls-9"/>
+                <ellipse id="svg_21" stroke-width="2px" stroke-miterlimit="10" stroke="#231f20" fill="#fff" ry="50.79" rx="96.34" cy="220.67" cx="575.31" class="cls-11"/>
+                <text id="svg_16" x="330.25" y="235.88" letter-spacing="0.01em" font-weight="600" font-family="sans-serif" fill="#231f20" font-size="26px" class="cls-10">phase</text>
+                <text id="svg_22" x="525.41" y="230" letter-spacing="0.01em" font-weight="600" font-family="sans-serif" fill="#231f20" font-size="26px" class="cls-10">gibbous</text>
+            </g>
+        </g>
+    </g>
+</svg>

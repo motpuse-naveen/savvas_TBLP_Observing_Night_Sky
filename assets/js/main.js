@@ -12,8 +12,12 @@ $(document).ready(function () {
         $('body').removeClass('show-focus-outlines');
     });
     setTimeout(function () {
+        $(".cardmarginTop").removeClass("cardmarginTop")
+    },1000)
+    setTimeout(function () {
         $(".white-bg").removeClass("white-bg")
         $("body.black").removeClass("black")
+        //$(".cardmarginTop").removeClass("cardmarginTop")
     },2000)
     setTimeout(function () {
         $(".annimmenu").removeClass("annimmenu")
@@ -39,8 +43,6 @@ $(document).ready(function () {
         
         $(".annim-fade").removeClass("annim-fade")
         $(".card-cover-img").removeClass("FixHeight").addClass("MinHeight")
-        
-
         InitCarousel();
     }, 3000)
 });

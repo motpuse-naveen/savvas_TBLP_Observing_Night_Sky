@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 756.48 509.28">
+    <defs>
+        <style>.cls-1,.cls-5,.cls-6{fill:none;}.cls-2{isolation:isolate;}.cls-3{opacity:0.25;mix-blend-mode:multiply;}.cls-11,.cls-4,.cls-9{fill:#fff;}.cls-11,.cls-5,.cls-6,.cls-9{stroke:#231f20;stroke-miterlimit:10;}.cls-6{stroke-width:3px;}.cls-7{clip-path:url(#clip-path);}.cls-8{clip-path:url(#clip-path-2);}.cls-9{stroke-width:5px;}.cls-10,.cls-12{font-size:26px;fill:#231f20;font-family: sans-serif;font-weight:600;}.cls-10{letter-spacing:0.01em;}.cls-11{stroke-width:2px;}.cls-12{letter-spacing:0.01em;}</style>
+        <clipPath id="clip-path" transform="translate(-21.6 -51.84)">
+            <rect class="cls-1" x="260.17" y="171.05" width="129.88" height="176.81"/>
+        </clipPath>
+        <clipPath id="clip-path-2" transform="translate(-21.6 -51.84)">
+            <rect class="cls-1" x="390.06" y="171.05" width="129.88" height="176.81"/>
+        </clipPath>
+    </defs>
+    <g class="cls-2">
+        <g id="Layer_1" data-name="Layer 1">
+            <rect class="cls-4" x="13.68" y="13.72" width="719.21" height="471.92" rx="18.08"/>
+            <rect class="cls-5" x="13.68" y="13.72" width="719.21" height="471.92" rx="18.08"/>
+            <line class="cls-6" x1="367.4" y1="227.68" x2="367.4" y2="356.64"/>
+            <line class="cls-6" x1="367.4" y1="227.68" x2="239.27" y2="294.7"/>
+            <line class="cls-6" x1="367.4" y1="227.68" x2="259.99" y2="120.27"/>
+            <g id="_Mirror_Repeat_" data-name="&lt;Mirror Repeat&gt;">
+                <g class="cls-7">
+                    <line class="cls-6" x1="367.4" y1="227.68" x2="239.27" y2="294.7"/>
+                    <line class="cls-6" x1="367.4" y1="227.68" x2="259.99" y2="120.27"/>
+                </g>
+            </g>
+            <g id="_Mirror_Repeat_2" data-name="&lt;Mirror Repeat&gt;">
+                <g class="cls-8">
+                    <line class="cls-6" x1="369.52" y1="227.68" x2="497.64" y2="294.7"/>
+                    <line class="cls-6" x1="369.52" y1="227.68" x2="476.92" y2="120.27"/>
+                </g>
+            </g>
+            <ellipse class="cls-9" cx="365.51" cy="232.16" rx="88.18" ry="66.46"/>
+            <text class="cls-10" transform="translate(340.25 240.88)">sky</text>
+            <ellipse class="cls-11" cx="229.38" cy="110.07" rx="96.34" ry="50.79"/>
+            <text class="cls-12" transform="translate(193.77 120.79)">moon</text>
+            <ellipse class="cls-11" cx="490.09" cy="110.07" rx="96.34" ry="50.79"/>
+            <text class="cls-10" transform="translate(463.06 120.79)">sun</text>
+            <ellipse class="cls-11" cx="562.31" cy="306.67" rx="96.34" ry="50.79"/>
+            <text class="cls-10" transform="translate(528.41 312.4)">stars</text>
+            <ellipse class="cls-11" cx="166.25" cy="306.67" rx="96.34" ry="50.79"/>
+            <text class="cls-12" transform="translate(132.04 312.4)">night</text>
+            <ellipse class="cls-11" cx="366.19" cy="397.18" rx="96.34" ry="50.79"/>
+            <text class="cls-10" transform="translate(341.02 404.91)">day</text>
+        </g>
+    </g>
+</svg>
