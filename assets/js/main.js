@@ -114,6 +114,7 @@ $(document).on("click", ".side-nav-circle ul li a", function (event) {
 $(document).on("click", ".card-body .card-link", function (event) {
     var tablinkid = $(this).attr("data-tablinkid");
     $("#" + tablinkid).trigger("click");
+    event.stopPropagation();
 })
 $(document).on("click", "#linkNameTheFullMoon", function (event) {
     $('.container-fs-popup.fullmoon').ShowElement();
