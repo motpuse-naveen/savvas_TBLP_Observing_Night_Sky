@@ -1080,6 +1080,7 @@ a.graylink{
 }
 .card-body.img-card img{
     height: 160px;
+    width: 242px;
 }
 .popup-close-btn .fa-times-circle, 
 .ac-popup-close-btn .fa-times-circle{
