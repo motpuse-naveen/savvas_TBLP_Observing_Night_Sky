@@ -13,7 +13,7 @@ $(document).ready(function () {
     });
     setTimeout(function () {
         $(".cardmarginTop").removeClass("cardmarginTop")
-    },1000)
+    },0)
     setTimeout(function () {
         $(".white-bg").removeClass("white-bg")
         $("body.black").removeClass("black")

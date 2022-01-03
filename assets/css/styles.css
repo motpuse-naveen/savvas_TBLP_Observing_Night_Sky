@@ -1094,6 +1094,7 @@ ul.numberlist li:before {
 .cardmarginTop{
     position: relative;
     margin-top: 206px;
+    display: none;
 }
 .cardtextheight{
     position: relative;
