@@ -4,6 +4,16 @@
     }
 }
 
+.graphic_org_img{
+    max-height: none;
+    width: 100%;
+    max-width: 500px;
+}
+.proj_temp_img{
+    max-height: none;
+    width: 100%;
+    max-width: 500px;
+}
 @media (max-width: 990px) {
     .left-side-bar {
         display: none;
@@ -267,7 +277,8 @@
     .popup-content-title {
         font-size: 22px;
     }
-
+  line-height: 1;
+    /* margin-top: 6rem; */
     .text-content figure.right-image figcaption a.normlink {
         font-size: 18px;
     }

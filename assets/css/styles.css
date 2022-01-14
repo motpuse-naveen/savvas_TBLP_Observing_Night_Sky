@@ -773,9 +773,11 @@ a.graylink{
     font-family: 'poppins-semibold';
     color: #486FB1;
     font-size: 66px;
-    line-height: 1.5;
-    margin-top: 6rem;
+    line-height: 1;
+    /* margin-top: 6rem; */
     text-align: center;
+    letter-spacing: -2.6px;
+
 }
 .popup-content-title{
     font-family: 'poppins-semibold';
@@ -956,6 +958,14 @@ a.graylink{
 }
 .CarouselDots .dot.active {
     background-color: #999999;
+}
+.graphic_org_img{
+    max-height: 561px;
+    border: 1px solid #ACACAC;
+}
+.proj_temp_img{
+    max-height: 561px;
+    border: 1px solid #ACACAC; 
 }
 /*Annimation*/
 .annim1{
