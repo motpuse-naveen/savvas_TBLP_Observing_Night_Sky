@@ -2,18 +2,19 @@
     .popup-left-title {
         font-size: 44px;
     }
+    .graphic_org_img{
+        max-height: none;
+        width: 100%;
+        max-width: 500px;
+    }
+    .proj_temp_img{
+        max-height: none;
+        width: 100%;
+        max-width: 500px;
+    }
 }
 
-.graphic_org_img{
-    max-height: none;
-    width: 100%;
-    max-width: 500px;
-}
-.proj_temp_img{
-    max-height: none;
-    width: 100%;
-    max-width: 500px;
-}
+
 @media (max-width: 990px) {
     .left-side-bar {
         display: none;
