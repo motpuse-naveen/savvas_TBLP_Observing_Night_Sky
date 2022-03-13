@@ -241,7 +241,11 @@ body, html {
     left: 0px;
     width: 165px;
 }
-
+.side-disclamer .disctext {
+    font-size: 11px !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}
 .bold {
     font-family: "poppins-bold";
 }
@@ -683,6 +687,60 @@ a.graylink{
     background-color: #eeeeee;
     font-family: 'poppins-semibold';
 }
+.tbl-track-the-txt{
+    padding-bottom: 20px !important;
+}
+.table-dr-2{
+    font-family: 'poppins-semibold';
+}
+.table-dr-2 th{
+    border: 1px solid #000000 !important;
+    font-family: 'poppins-bold';
+    text-align:center;
+}
+.table-dr-2 td{
+    border: 1px solid #000000;
+    font-family: 'poppins-semibold';  
+}
+.wrapper {
+    display: flex;
+    align-items: baseline;
+}
+  
+.line {
+    border-top: 1px solid black;
+    flex-grow: 1;
+    margin: 0 10px;
+    margin-right: 0px;
+    margin-bottom: 3px;
+    margin-top: 5px;
+}
+
+
+.wrappers {
+    display: flex;
+    align-items: baseline;
+    box-sizing: border-box;
+    border-radius: 0px 0px 12px 12px;
+    width: 220px;
+    border: 1px solid #000000;
+    padding: 5px;
+    border-top: none;
+    height: 62px;
+    position: absolute;
+    top: 0px;
+    right: 40px;
+    
+}
+  
+ .lines {
+    
+    font-family: 'poppins-semibold'; 
+    font-size: 22px; 
+    position: absolute; 
+    bottom: 4px; 
+    left: 14px;
+}
 .table-ar-32 
 {
     margin-top: -40px;
@@ -726,7 +784,8 @@ a.graylink{
 
 }
 .tableProjTemp {
-    border:0px
+    border:0px;
+    margin-top: 12px;
 }
 .tableProjTemp th{
     border: 0px;
@@ -743,10 +802,13 @@ a.graylink{
     border-bottom: 1px solid #000000 !important;
 }
 .tableWrapper{
-    padding: 30px;
+    padding: 40px;
     border: 1px solid #000000;
+    position: relative;
 }
-
+.tbl-project-temp-wrap{
+    padding-bottom: 20px !important;
+}
 .popup-main-row{
     height: 100%;
     margin: 0px;
