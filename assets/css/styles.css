@@ -155,7 +155,7 @@ body, html {
     /* background: black; */
     height: 312px;
     border: 1px solid;
-    background: url(../images/main.jpg);
+    background: url(../images/SN23_TS01_SC0001_R2611761_D_BAN.jpg);
     background-size: cover;
     z-index: -2;
 }
@@ -166,7 +166,7 @@ body, html {
     /* background: black; */
     height: 150px;
     border: 1px solid;
-    background: url(../images/main.jpg);
+    background: url(../images/SN23_TS01_SC0001_R2611761_D_BAN.jpg);
     background-size: cover;
     z-index: -2;
 }
@@ -349,31 +349,31 @@ body, html {
 }
 
 .card-cover-img.img1 {
-    background: url(../images/TextSet_G1_01@2x.png);
+    background: url(../images/SN23_TS01_SC0002_R2611761_D_TXT1.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .card-cover-img.img2 {
-    background: url(../images/TextSet_G1_02@2x.png);
+    background: url(../images/SN23_TS01_SC0003_R2611744_D_TXT2.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .card-cover-img.img3 {
-    background: url(../images/TextSet_G1_03@2x.png);
+    background: url(../images/SN23_TS01_SC0004_R2611747_D_TXT3.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .card-cover-img.img4 {
-    background: url(../images/TextSet_G1_04@2x.png);
+    background: url(../images/SN23_TS01_SC0005_R2611781_D_TXT4.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .card-cover-img.img5 {
-    background: url(../images/TextSet_G1_05REV@2x.png);
+    background: url(../images/SN23_TS01_SC0006_R2611770_D_TXT5.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
