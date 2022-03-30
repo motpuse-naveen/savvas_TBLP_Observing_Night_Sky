@@ -1265,4 +1265,9 @@ ul.numberlist li:before {
     }
   }
 
+  .rubric-caption{
+    caption-side:top;
+    margin-top: 30px;
+  }
+
 /**/
